@@ -31,7 +31,7 @@ export const projectsData = [
         id: 4,
         image: Work6,
         title: 'RoughLike',
-        category: 'games',
+        category: 'app',
     },
     {
         id: 5,
@@ -43,13 +43,13 @@ export const projectsData = [
         id: 6,
         image: Work5,
         title: 'Snake',
-        category: 'games',
+        category: 'app',
     },
     {
         id: 7,
         image: Work7,
         title: 'Battleship',
-        category: 'games',
+        category: 'app',
     },
     {
         id: 8,
@@ -71,11 +71,5 @@ export const projectNav = [
     },
     {
         name: 'e-commerce',
-    },
-    {
-        name: 'games',
-    },
-    {
-        name: 'OOP',
     },
 ]
