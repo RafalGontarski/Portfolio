@@ -1,6 +1,6 @@
 import React from 'react';
 import './about.css';
-import AboutImg from '../../assets/about.jpeg';
+import AboutImg from '../../assets/img/about.jpeg';
 import CV from '../../assets/Rafał Gontarski.pdf'
 import {Info} from "./Info";
 import { UilFileDownload } from '@iconscout/react-unicons'

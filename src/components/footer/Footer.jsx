@@ -1,12 +1,12 @@
 import React from 'react';
 import './footer.css';
-import CrypticalLogo from '../../assets/crypticallogo.jpeg';
+import CrypticalLogo from '../../assets/img/crypticallogo.jpeg';
 
 export const Footer = () => {
     return (
         <footer className="footer">
             <div className="footer__container container">
-                <h1 className="footer__title">Gontarski</h1>
+                <h1 className="footer__title">Rafał Gontarski</h1>
 
                 <ul className="footer__list">
                     <li>

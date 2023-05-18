@@ -58,10 +58,10 @@ export const Contact = () => {
                         </div>
 
                         <div className="contact__card">
-                            <i className="bx bxl-messenger contact__card-icon"></i>
+                            <i className="bx bxl-discord contact__card-icon"></i>
 
-                            <h3 className="contact__card-title">Messenger</h3>
-                            <span className="contact__card-data">rafalgontarski.fb123</span>
+                            <h3 className="contact__card-title">Discord</h3>
+                            <span className="contact__card-data">RafalGontarski#1582</span>
 
                             <a href="https://m.me/rafalgontarski" className="contact__button">Write me
                                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>

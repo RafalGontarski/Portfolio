@@ -13,7 +13,7 @@ import { Pagination } from "swiper";
 
 export const Testimonials = () => {
     return (
-        <section className="testimontials section" id="testimontials">
+        <section className="testimonials section" id="testimonials">
             <h2 className="section__title">My mentors say</h2>
             <span className="section__subtitle">Testimonial</span>
 
