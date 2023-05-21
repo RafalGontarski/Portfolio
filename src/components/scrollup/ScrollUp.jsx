@@ -1,5 +1,6 @@
-import React from "react";
+import React, {useContext} from "react";
 import './scrollup.css';
+import {DarkModeContext} from "../../context/DarkModeContext";
 
 
 export const ScrollUp = () => {
@@ -10,8 +11,11 @@ export const ScrollUp = () => {
         else scrollUp.classList.remove('show-scroll')
 
     })
+
+    const { isDarkMode } = useContext(DarkModeContext);
+
     return (
-        <a href="#" className="scrollup">
+        <a href="#" className={`scrollup ${isDarkMode ? "scrollup-dark-mode" : "scrollup-light-mode"}`}>
             <i className="uil uil-arrow-up scrollup__icon"></i>
         </a>
     )

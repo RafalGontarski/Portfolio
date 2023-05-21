@@ -28,8 +28,17 @@
 
 .nav__logo,
 .nav__toggle {
-    color: var(--title-color);
     font-weight: var(--font-medium);
+}
+
+.nav__toggle-light-mode {
+    color: var(--title-color);
+    transition: 2s;
+}
+
+.nav__toggle-dark-mode {
+    color: var(--container-color);
+    transition: 2s;
 }
 
 .nav__logo-dark {
@@ -119,11 +128,18 @@
         bottom: -100%;
         left: 0;
         width: 100%;
-        background-color: var(--body-color);
         padding: 2rem 1.5rem 4rem;
         box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
         border-radius: 1.5rem 1.5rem 0 0;
-        transition: .3s;
+        transition: .2s;
+    }
+
+    .nav__menu-light-mode {
+        background-color: var(--body-color);
+    }
+
+    .nav__menu-dark-mode {
+        background-color: var(--title-color);
     }
     /* Show Menu */
     .show-menu {
@@ -147,11 +163,23 @@
         bottom: .5rem;
         font-size: 1.5rem;
         cursor: pointer;
+
+    }
+
+    .nav__close-light-mode {
         color: var(--title-color);
     }
 
-    .nav__close:hover {
+    .nav__close-dark-mode {
+        color: var(--title-color-white);
+    }
+
+    .nav__close-light-mode:hover {
         color: var(--title-color-dark);
+    }
+
+    .nav__close-dark-mode:hover {
+        color: #fff;
     }
 
     .nav__toggle {

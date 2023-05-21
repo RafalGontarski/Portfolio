@@ -27,7 +27,7 @@ export const Header = () => {
                 <a href='index.html' className={`nav__logo nav__logo-dark ${isDarkMode ? "nav__logo-light" : ""}`}>Rafał Gontarski</a>
 
                 {/*<div className='nav__menu'>*/}
-                <div className={Toggle ? 'nav__menu show-menu' : 'nav__menu'}>
+                <div className={Toggle ? `nav__menu show-menu ${isDarkMode ? "nav__menu-dark-mode" : "nav__menu-light-mode"}` : 'nav__menu'}>
                     <ul className='nav__list grid'>
                         <li className='nav__item'>
                             <a href='#home'
@@ -91,14 +91,20 @@ export const Header = () => {
                         </li>
                     </ul>
 
-                    <i className="uil uil-times nav__close"
+                    <i className={`uil uil-times nav__close  ${isDarkMode ?
+                        "nav__close-dark-mode" : "nav__close-light-mode"}`}
                        onClick={() => showMenu(!Toggle)}></i>
                 </div>
 
-                <div className="nav__toggle" onClick={() => showMenu(!Toggle)}>
+                <div className={`nav__toggle  ${isDarkMode ? 
+                    "nav__toggle-dark-mode" : "nav__toggle-light-mode"}`}
+                     onClick={() => showMenu(!Toggle)}>
                     <i className="uil uil-apps"></i>
                 </div>
-                <a><i className={isDarkMode ? "uil uil-moon light-mode" : "uil uil-brightness nav__link"} id='toggleDark' onClick={toggleDarkMode}></i></a>
+                <a><i className={isDarkMode ?
+                      "uil uil-moon light-mode" : "uil uil-brightness nav__link"}
+                      id='toggleDark'
+                      onClick={toggleDarkMode}></i></a>
 
             </nav>
         </header>

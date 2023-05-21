@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useContext} from "react";
 import './testimonials.css';
 import {Data} from './Data';
 // Import Swiper React components
@@ -10,12 +10,14 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Pagination } from "swiper";
+import {DarkModeContext} from "../../context/DarkModeContext";
 
 export const Testimonials = () => {
+    const { isDarkMode, toggleDarkMode } = useContext(DarkModeContext);
     return (
         <section className="testimonials section" id="testimonials">
-            <h2 className="section__title">Recommendation</h2>
-            <span className="section__subtitle">Testimonial</span>
+            <h2 className={`section__title ${isDarkMode ? "section__title-dark-mode" : "section__title-light-mode"}`}>Recommendation</h2>
+            <span className={`section__subtitle ${isDarkMode ? "section__subtitle-dark-mode" : "section__subtitle-light-mode"}`}>Testimonial</span>
 
             <Swiper className="testimonial__container"
                     loop={true}

@@ -1,12 +1,14 @@
-import React, { useRef } from 'react';
+import React, {useContext, useRef} from 'react';
 import emailjs from '@emailjs/browser';
 import './contact.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import {DarkModeContext} from "../../context/DarkModeContext";
 
 
 export const Contact = () => {
     const form = useRef();
+    const { isDarkMode, toggleDarkMode } = useContext(DarkModeContext);
     const notify = () =>
         toast.success('Success sending !', {
             position: toast.POSITION.TOP_RIGHT
@@ -25,8 +27,8 @@ export const Contact = () => {
 
     return (
         <section className="contact section" id="contact">
-            <h2 className="section__title">Get in touch</h2>
-            <span className="section__subtitle">Contact me</span>
+            <h2 className={`section__title ${isDarkMode ? "section__title-dark-mode" : "section__title-light-mode"}`}>Get in touch</h2>
+            <span className={`section__subtitle ${isDarkMode ? "section__subtitle-dark-mode" : "section__subtitle-light-mode"}`}>Contact me</span>
 
             <div className="contact__container container grid">
                 <div className="contact__content">
@@ -104,7 +106,7 @@ export const Contact = () => {
                                 placeholder='Write your project'></textarea>
                         </div>
 
-                        <button className="button button--flex" onClick={notify}>
+                        <button className={`button button--flex ${isDarkMode ? "button__dark-mode" : "button__light-mode"}`} onClick={notify}>
                             Send Message
                             <svg
                                 width={24}

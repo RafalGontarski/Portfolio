@@ -13,6 +13,8 @@
   --footer_dark-color: hsl(var(--hue), var(--sat), 21.5%);
   --title-color-white: hsl(var(--hue), var(--sat), 80%);
   --button-background-color-white: hsl(var(--hue), var(--sat), 60%);
+  --button-background-color-dark: hsl(var(--hue), var(--sat), 30%);
+  --button-background-color-dark-hover: hsl(var(--hue), var(--sat), 38%);
   --title-color-dark: hsl(var(--hue), var(--sat), 0%);
   --text-color: hsl(var(--hue), var(--sat), 46%);
   --body-color: hsl(var(--hue), var(--sat), 98%);
@@ -122,13 +124,33 @@ img {
 
 .section__title {
   font-size: var(--h1-font-size);
+
+}
+
+.section__title-light-mode {
   color: var(--title-color);
+  transition: 2s;
+}
+
+.section__title-dark-mode {
+  color: var(--container-color);
+  transition: 2s;
 }
 
 .section__subtitle {
   display: block;
   font-size: var(--small-font-size);
   margin-bottom: 4rem;
+}
+
+.section__subtitle-light-mode {
+  color: var(--title-color);
+  transition: 2s;
+}
+
+.section__subtitle-dark-mode {
+  color: var(--container-color);
+  transition: 2s;
 }
 
 .section__title,
@@ -160,13 +182,13 @@ img {
 }
 
 .button__dark-mode {
-  background-color: var(--text-color);
-  transition: 2s;
+  background-color: var(--button-background-color-dark);
+  box-sizing: border-box;
 }
 
 .button__light-mode {
   background-color: var(--title-color);
-  transition: 2s;
+
 }
 
 .button__light-mode:hover {
@@ -174,7 +196,8 @@ img {
 }
 
 .button__dark-mode:hover {
-  background-color: var(--button-background-color-white);
+  background-color: var(--button-background-color-dark-hover);
+
   /*transition: 1s;*/
 }
 

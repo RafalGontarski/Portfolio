@@ -1,16 +1,18 @@
-import React, {useState} from "react";
+import React, {useContext, useState} from "react";
 import './services.css';
+import {DarkModeContext} from "../../context/DarkModeContext";
 
 export const Services = () => {
     const[toggleState, setToggleState] = useState(0);
+    const { isDarkMode, toggleDarkMode } = useContext(DarkModeContext);
 
     const toggleTab = (index) => {
         setToggleState(index);
     }
     return (
         <section className="services section" id="services">
-            <h2 className="section__title">Services</h2>
-            <span className="section__subtitle">What i Offer</span>
+            <h2 className={`section__title ${isDarkMode ? "section__title-dark-mode" : "section__title-light-mode"}`}>Services</h2>
+            <span className={`section__subtitle ${isDarkMode ? "section__subtitle-dark-mode" : "section__subtitle-light-mode"}`}>What i Offer</span>
 
             <div className="services__container container grid">
                 <div className="services__content">
