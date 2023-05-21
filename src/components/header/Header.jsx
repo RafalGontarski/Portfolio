@@ -20,7 +20,7 @@ export const Header = () => {
 
     return (
         /*{`nav container ${isDarkMode ? "dark-mode" : ""}`}*/
-        <header className={`header header-light-background ${isDarkMode ? "header-dark-background" : ""}`}>
+        <header className={`header ${isDarkMode ? "header-dark-background" : "header-light-background"}`}>
 
             <nav className='nav container'>
 

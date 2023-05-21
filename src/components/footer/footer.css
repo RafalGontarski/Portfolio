@@ -1,6 +1,15 @@
 .footer {
-    background-color: var(--container-color);
     border-top: 1px solid rgba(0, 0, 0, 0.1);
+    transition: 2s;
+}
+
+.footer__light-mode {
+    background-color: var(--container-color);
+    transition: 2s;
+}
+
+.footer__dark-mode {
+    background-color: var(--footer_dark-color);
     transition: 2s;
 }
 
@@ -11,6 +20,17 @@
 .footer__title,
 .footer__link {
     color: var(--title-color);
+    transition: 2s;
+}
+
+.footer__title-dark-mode {
+    color: var(--container-color);
+    transition: 2s;
+}
+
+.footer__link-dark-mode {
+    color: var(--title-color-white);
+    transition: 2s;
 }
 
 .footer__title {
@@ -20,6 +40,10 @@
 
 .footer__link:hover {
     color: var(--title-color-dark);
+}
+
+.footer__link-dark-mode:hover {
+    color: #fff;
 }
 
 .footer__list {
@@ -36,7 +60,6 @@
 }
 
 .footer__social-link{
-    background-color: var(--title-color);
     color: var(--container-color);
     font-size: 1.125rem;
     padding: 0.4rem;
@@ -44,16 +67,40 @@
     display: inline-flex;
 }
 
+.footer__social-link-light-mode {
+    background-color: var(--title-color);
+    transition: 2s;
+}
+
+.footer__social-link-dark-mode {
+    background-color: var(--button-background-color-white);
+    transition: 2s;
+}
+
 .footer__social-link:hover {
     background-color: var(--title-color-dark);
 }
 
+.footer__social-link-dark-mode:hover {
+    background-color: var(--text-color);
+}
+
+
 .footer__copy {
     display: block;
     margin-top: 4.5rem;
-    color: var(--title-color);
     text-align: center;
     font-size: var(--smaller-font-size);
+}
+
+.footer__copy-light-mode {
+    color: var(--title-color);
+    transition: 2s;
+}
+
+.footer__copy-dark-mode {
+    color: var(--container-color);
+    transition: 2s;
 }
 
 /* BREAKPOINTS */
