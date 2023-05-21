@@ -3,7 +3,7 @@ import React from "react";
 export const Scrum = () => {
     return (
         <div className='skills__content'>
-            <h3 className="skills__title">Scrum Master</h3>
+            <h3 className="skills__title">Other</h3>
 
             <div className="skills__box">
                 <div className="skills__group">
@@ -58,7 +58,7 @@ export const Scrum = () => {
                         <i className='bx bxs-badge-check'></i>
 
                         <div>
-                            <h3 className="skills__name">Git</h3>
+                            <h3 className="skills__name">Docker</h3>
                             <span className="skills__level">Basic</span>
                         </div>
                     </div>
@@ -67,7 +67,7 @@ export const Scrum = () => {
                         <i className='bx bxs-badge-check'></i>
 
                         <div>
-                            <h3 className="skills__name">Discord</h3>
+                            <h3 className="skills__name">Example</h3>
                             <span className="skills__level">Advanced</span>
                         </div>
                     </div>
@@ -76,7 +76,7 @@ export const Scrum = () => {
                         <i className='bx bxs-badge-check'></i>
 
                         <div>
-                            <h3 className="skills__name">Example</h3>
+                            <h3 className="skills__name">JUnit</h3>
                             <span className="skills__level">Basic</span>
                         </div>
                     </div>

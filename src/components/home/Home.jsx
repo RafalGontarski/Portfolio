@@ -5,6 +5,7 @@ import {Data} from "./Data";
 import {ScrollDown} from "./scroll/ScrollDown";
 
 export const Home = () => {
+
     return (
         <section className="home section" id="home">
             <div className="home__container container grid">
@@ -12,10 +13,10 @@ export const Home = () => {
                     <Social/>
                     <div className="home__img"></div>
                     <Data/>
+
                 </div>
                 <ScrollDown/>
             </div>
-
         </section>
     )
 }

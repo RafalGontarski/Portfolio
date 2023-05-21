@@ -16,12 +16,13 @@ export const Backend = () => {
                         </div>
                     </div>
 
+
                     <div className="skills__data">
                         <i className='bx bxs-badge-check'></i>
 
                         <div>
-                            <h3 className="skills__name">PostgreSQL</h3>
-                            <span className="skills__level">Pre-Intermediate</span>
+                            <h3 className="skills__name">Spring</h3>
+                            <span className="skills__level">Intermediate</span>
                         </div>
                     </div>
 
@@ -29,8 +30,8 @@ export const Backend = () => {
                         <i className='bx bxs-badge-check'></i>
 
                         <div>
-                            <h3 className="skills__name">SQL</h3>
-                            <span className="skills__level">Intermediate</span>
+                            <h3 className="skills__name">PostgreSQL</h3>
+                            <span className="skills__level">Pre-Intermediate</span>
                         </div>
                     </div>
 
@@ -49,8 +50,8 @@ export const Backend = () => {
                         <i className='bx bxs-badge-check'></i>
 
                         <div>
-                            <h3 className="skills__name">Spring</h3>
-                            <span className="skills__level">Intermediate</span>
+                            <h3 className="skills__name">Python</h3>
+                            <span className="skills__level">Basic</span>
                         </div>
                     </div>
 
@@ -67,8 +68,8 @@ export const Backend = () => {
                         <i className='bx bxs-badge-check'></i>
 
                         <div>
-                            <h3 className="skills__name">Junit5</h3>
-                            <span className="skills__level">Basic</span>
+                            <h3 className="skills__name">SQL</h3>
+                            <span className="skills__level">Intermediate</span>
                         </div>
                     </div>
 
@@ -76,10 +77,11 @@ export const Backend = () => {
                         <i className='bx bxs-badge-check'></i>
 
                         <div>
-                            <h3 className="skills__name">Git</h3>
-                            <span className="skills__level">Intermediate</span>
+                            <h3 className="skills__name">JUnit</h3>
+                            <span className="skills__level">Basic</span>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>

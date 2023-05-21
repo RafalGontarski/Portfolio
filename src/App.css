@@ -10,6 +10,8 @@
   --hue: 0;
   --sat: 0%;
   --title-color: hsl(var(--hue), var(--sat), 20%);
+  --title-color-white: hsl(var(--hue), var(--sat), 80%);
+  --button-background-color-white: hsl(var(--hue), var(--sat), 60%);
   --title-color-dark: hsl(var(--hue), var(--sat), 0%);
   --text-color: hsl(var(--hue), var(--sat), 46%);
   --body-color: hsl(var(--hue), var(--sat), 98%);
@@ -84,7 +86,10 @@ textarea {
 body {
   background-color: var(--body-color);
   color: var(--text-color);
+  transition: 2s;
 }
+
+
 
 h1, h2, h3 {
   color: var(--title-color);
@@ -135,6 +140,7 @@ img {
   max-width: 968px;
   margin-left: auto;
   margin-right: auto;
+  transition: 2s;
 }
 
 .grid {
@@ -145,15 +151,30 @@ img {
 
 .button {
   display: inline-block;
-  background-color: var(--title-color);
+
   color: var(--container-color);
   padding: 1.25rem 2rem;
   border-radius: 1rem;
   font-weight: var(--font-medium);
 }
 
-.button:hover {
+.button__dark-mode {
+  background-color: var(--text-color);
+  transition: 1s;
+}
+
+.button__light-mode {
+  background-color: var(--title-color);
+  transition: 1s;
+}
+
+.button__light-mode:hover {
   background-color: var(--title-color-dark);
+}
+
+.button__dark-mode:hover {
+  background-color: var(--button-background-color-white);
+  /*transition: 1s;*/
 }
 
 .button__icon {
@@ -163,6 +184,20 @@ img {
 .button--flex {
   display: inline-flex;
   align-items: center;
+}
+
+/* Dark Mode */
+
+.dark-mode-body {
+    background-color: #333;
+    transition: 2s;
+}
+
+
+.light-mode {
+  /*background-color: #fff;*/
+  color: var(--body-color);
+  transition: 2s;
 }
 
 /* BREAKPOINTS */

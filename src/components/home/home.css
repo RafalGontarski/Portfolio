@@ -17,16 +17,46 @@
 
 .home__social-icon {
     font-size: 1.25rem;
-    color: var(--title-color);
+    color: var(--text-color);
+    transition: 2s;
 }
 
-.home__social-icon:hover {
-    color: var(--title-color-dark);
+.home__social-icon-light-mode {
+    color: var(--text-color);
+    transition: 2s;
 }
+
+.home__social-icon-light-mode:hover {
+    color: var(--title-color-dark);
+    transition: 2s;
+}
+
+.home__social-icon-dark-mode {
+    color: var(--title-color-white);
+    transition: 2s;
+}
+
+.home__social-icon-dark-mode:hover {
+    color: #fff;
+    transition: 2s;
+}
+
+
 
 .home__title {
     font-size: var(--big-font-size);
     margin-bottom: var(--mb-0-25);
+
+}
+
+.light-mode-home__title {
+    color: var(--title-color);
+    transition: 2s;
+}
+
+.dark-mode-home__title {
+    color: var(--body-color);
+    transition: 2s;
 }
 
 .home__hand {
@@ -43,6 +73,16 @@
     margin-bottom: var(--mb-1);
 }
 
+.light-mode-home__subtitle {
+    color: var(--title-color);
+    transition: 2s;
+}
+
+.dark-mode-home__subtitle {
+    color: var(--body-color);
+    transition: 2s;
+}
+
 .home__subtitle::before {
     content: '';
     position: absolute;
@@ -56,6 +96,12 @@
 .home__description {
     max-width: 400px;
     margin-bottom: var(--mb-3);
+    transition: 2s;
+}
+
+.home__description-dark-mode {
+    color: var(--body-color);
+    transition: 2s;
 }
 
 .home__img {
@@ -70,6 +116,13 @@
     height: 300px;
     animation: profile__animate 8s ease-in-out infinite 1s;
 }
+
+.dark-mode .home__subtitle {
+    color: var(--body-color);
+    transition: 2s;
+}
+
+
 
 @keyframes profile__animate {
     0% {

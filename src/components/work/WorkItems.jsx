@@ -58,9 +58,10 @@ export const WorkItems = ({ item}) => {
                        onClick={() => toggleTab(0)}></i>
 
                     <h3 className="work__modal-title">{item.title}</h3>
-                    <p className="work__modal-description">
-                        {item.description}
-                    </p>
+                    <a href={item.url} className="work__button-modal" >
+                        Repository <i className="bx bx-right-arrow-alt work__button-icon"></i>
+                    </a>
+
                     <video src={item.movie}  className='work__giff'
                          onClick={handleClick}
                            ref={imgRef}>
@@ -78,16 +79,16 @@ export const WorkItems = ({ item}) => {
                         </li>
 
                         <li className="work__modal-service">
-                            <i className="uil uil-book work__modal-icon"></i>
+                            <i className="uil uil-channel work__modal-icon"></i>
                             <p className="work__modal-info">
-                                {item.libraries}
+                                {item.frameworks}
                             </p>
                         </li>
 
                         <li className="work__modal-service">
-                            <i className="uil uil-channel work__modal-icon"></i>
+                            <i className="uil uil-book work__modal-icon"></i>
                             <p className="work__modal-info">
-                                {item.frameworks}
+                                {item.libraries}
                             </p>
                         </li>
 
