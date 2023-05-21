@@ -18,7 +18,7 @@ export const About = () => {
                 <div className="about__data">
                     <Info/>
 
-                    <p className="about__description">Full-stack developer,
+                    <p className={`about__description ${isDarkMode ? "about__description-dark-mode" : "about__description-light-mode"}`}>Full-stack developer,
                     I create backend with databases and frontend apps.
                     I am always looking for the latest and well works solutions.
                     </

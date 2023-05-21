@@ -100,7 +100,7 @@
 }
 
 .home__description-dark-mode {
-    color: var(--button-background-color-white);
+    color: var(--title-color-white);
     transition: 2s;
 }
 

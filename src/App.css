@@ -10,7 +10,7 @@
   --hue: 0;
   --sat: 0%;
   --title-color: hsl(var(--hue), var(--sat), 20%);
-  --footer_dark-color: hsl(var(--hue), var(--sat), 21.5%);
+  --footer_dark-color: hsl(var(--hue), var(--sat), 15%);
   --title-color-white: hsl(var(--hue), var(--sat), 80%);
   --button-background-color-white: hsl(var(--hue), var(--sat), 60%);
   --button-background-color-dark: hsl(var(--hue), var(--sat), 30%);
@@ -183,7 +183,7 @@ img {
 
 .button__dark-mode {
   background-color: var(--button-background-color-dark);
-  box-sizing: border-box;
+
 }
 
 .button__light-mode {
