@@ -160,12 +160,12 @@ img {
 
 .button__dark-mode {
   background-color: var(--text-color);
-  transition: 1s;
+  transition: 2s;
 }
 
 .button__light-mode {
   background-color: var(--title-color);
-  transition: 1s;
+  transition: 2s;
 }
 
 .button__light-mode:hover {

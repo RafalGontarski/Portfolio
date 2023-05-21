@@ -9,8 +9,6 @@ export const Social = () => {
             <a href="https://www.linkedin.com/in/rafa%C5%82-gontarski/"
                className={`home__social-icon
                ${isDarkMode ? "home__social-icon-dark-mode" : "home__social-icon-light-mode"}`}
-
-
                target='_blank'>
                 <i className="uil uil-linkedin"></i>
             </a>

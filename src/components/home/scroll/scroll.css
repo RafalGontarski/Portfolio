@@ -20,10 +20,20 @@
 .mouse {
     width: 17.78px; /* 50px * (32/90) */
     height: 32px;
-    border: 2px solid #333; /* 3px * (32/90) */
+    /*border: 2px solid #333; !* 3px * (32/90) *!*/
     border-radius: 30px; /* 60px * (32/90) */
     position: relative;
     margin-right: 0.5rem;
+}
+
+.mouse-light-mode {
+    border: 2px solid #333; /* 3px * (32/90) */
+    transition: 2s;
+}
+
+.mouse-dark-mode {
+    border: 2px solid var(--body-color); /* 3px * (32/90) */
+    transition: 2s;
 }
 
 .mouse::before {
@@ -34,11 +44,20 @@
     top: 3.56px; /* 10px * (32/90) */
     left: 50%;
     transform: translateX(-50%);
-    background-color: #333;
     border-radius: 50%;
     opacity: 1;
     animation: wheel 2s infinite;
     -webkit-animation: wheel 2s infinite;
+}
+
+.mouse-light-mode::before {
+    background-color: #333;
+    transition: 2s;
+}
+
+.mouse-dark-mode::before {
+    background-color: var(--body-color);
+    transition: 2s;
 }
 
 @keyframes wheel {
