@@ -7,7 +7,7 @@ import { UilFileDownload } from '@iconscout/react-unicons'
 import {DarkModeContext} from "../../context/DarkModeContext";
 
 export const About = () => {
-    const { isDarkMode, toggleDarkMode } = useContext(DarkModeContext);
+    const { isDarkMode} = useContext(DarkModeContext);
 
     return (
         <section className="about section" id="about">

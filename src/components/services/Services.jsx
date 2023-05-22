@@ -4,7 +4,7 @@ import {DarkModeContext} from "../../context/DarkModeContext";
 
 export const Services = () => {
     const[toggleState, setToggleState] = useState(0);
-    const { isDarkMode, toggleDarkMode } = useContext(DarkModeContext);
+    const { isDarkMode} = useContext(DarkModeContext);
 
     const toggleTab = (index) => {
         setToggleState(index);
