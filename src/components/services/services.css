@@ -148,6 +148,16 @@
     border-radius: 1.5rem;
 }
 
+.services__modal-content-light-mode {
+    background-color: var(--container-color);
+    transition: 2s;
+}
+
+.services__modal-content-dark-mode {
+    background-color: var(--button-background-color-dark);
+    transition: 2s;
+}
+
 .services__modal-close {
     position: absolute;
     top: 1.5rem;
@@ -157,9 +167,46 @@
     cursor: pointer;
 }
 
+.uil-times-light-mode {
+    transition: 2s;
+}
+
+.services__modal-close-light-mode {
+    color: var(--title-color);
+    transition: 2s;
+}
+
+.uil-times-dark-mode {
+    color: var(--container-color);
+    transition: 2s;
+}
+
+.services__modal-close-dark-mode {
+    color: var(--container-color);
+    transition: 2s;
+}
+
 .services__modal-title,
 .services__modal-description {
     text-align: center;
+}
+
+.services__modal-title-light-mode {
+    transition: 2s;
+}
+
+.services__modal-title-dark-mode {
+    color: var(--container-color);
+    transition: 2s;
+}
+
+.services__modal-description-light-mode {
+    transition: 2s;
+}
+
+.services__modal-description-dark-mode {
+    color: var(--title-color-white);
+    transition: 2s;
 }
 
 .services__modal-title {
@@ -185,12 +232,38 @@
 }
 
 .services__modal-icon {
-    color: var(--title-color);
     font-size: 1.1rem;
+}
+
+.uil-check-circle-light-mode {
+    transition: 2s;
+}
+
+.services__modal-icon-light-mode {
+    color: var(--title-color);
+    transition: 2s;
+}
+
+.uil-check-circle-dark-mode {
+    color: var(--container-color);
+    transition: 2s;
+}
+
+.services__modal-icon-dark-mode {
+    color: var(--container-color);
+    transition: 2s;
 }
 
 .services__modal-info {
     font-size: var(--small-font-size);
+}
+
+.services__modal-info-light-mode {
+
+}
+
+.services__modal-info-dark-mode {
+    color: var(--container-color);
 }
 
 /* Active Modal*/

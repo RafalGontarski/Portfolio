@@ -43,47 +43,73 @@ export const Services = () => {
                         'services__modal active-modal' :
                         "services__modal"}>
                         <div className={`services__modal-content ${isDarkMode ? "services__modal-content-dark-mode" : "services__modal-content-light-mode"}`}>
-                            <i className="uil uil-times services__modal-close"
+                            <i className={`uil uil-times services__modal-close 
+                               ${isDarkMode ? "uil uil-times-dark-mode services__modal-close-dark-mode" :
+                                "uil uil-times-light-mode services__modal-close-light-mode"}`}
                                onClick={() => toggleTab(0)}></i>
 
-                            <h3 className="services__modal-title">Database Developer</h3>
-                            <p className="services__modal-description">
+                            <h3 className={`services__modal-title ${isDarkMode ?
+                                'services__modal-title-dark-mode' :
+                                'services__modal-title-light-mode'}`}>Database Developer</h3>
+                            <p className={`services__modal-description ${isDarkMode ?
+                                'services__modal-description-dark-mode' :
+                                'services__modal-description-light-mode'}`}>
                                 Service with one year of experience in
                                 full-stack Java & React programming.
                             </p>
 
                             <ul className="services__modal-services grid">
                                 <li className="services__modal-service">
-                                    <i className="uil uil-check-circle services__modal-icon"></i>
-                                    <p className="services__modal-info">
+                                    <i className={`uil uil-check-circle services__modal-icon 
+                                        ${isDarkMode ? 'uil-check-circle-dark-mode services__modal-icon-dark-mode' : 
+                                        'uil-check-circle-light-mode services__modal-icon-light-mode'}`}></i>
+                                    <p className={`services__modal-info ${isDarkMode ?
+                                        'services__modal-info-dark-mode' :
+                                        'services__modal-info-light-mode'}`}>
                                         I create database.
                                     </p>
                                 </li>
 
                                 <li className="services__modal-service">
-                                    <i className="uil uil-check-circle services__modal-icon"></i>
-                                    <p className="services__modal-info">
+                                    <i className={`uil uil-check-circle services__modal-icon 
+                                        ${isDarkMode ? 'uil-check-circle-dark-mode services__modal-icon-dark-mode' : 
+                                        'uil-check-circle-light-mode services__modal-icon-light-mode'}`}></i>
+                                    <p className={`services__modal-info ${isDarkMode ?
+                                        'services__modal-info-dark-mode' :
+                                        'services__modal-info-light-mode'}`}>
                                         I develop backend app.
                                     </p>
                                 </li>
 
                                 <li className="services__modal-service">
-                                    <i className="uil uil-check-circle services__modal-icon"></i>
-                                    <p className="services__modal-info">
+                                    <i className={`uil uil-check-circle services__modal-icon 
+                                        ${isDarkMode ? 'uil-check-circle-dark-mode services__modal-icon-dark-mode' : 
+                                        'uil-check-circle-light-mode services__modal-icon-light-mode'}`}></i>
+                                    <p className={`services__modal-info ${isDarkMode ?
+                                        'services__modal-info-dark-mode' :
+                                        'services__modal-info-light-mode'}`}>
                                         I develop frontend app.
                                     </p>
                                 </li>
 
                                 <li className="services__modal-service">
-                                    <i className="uil uil-check-circle services__modal-icon"></i>
-                                    <p className="services__modal-info">
+                                    <i className={`uil uil-check-circle services__modal-icon 
+                                        ${isDarkMode ? 'uil-check-circle-dark-mode services__modal-icon-dark-mode' : 
+                                        'uil-check-circle-light-mode services__modal-icon-light-mode'}`}></i>
+                                    <p className={`services__modal-info ${isDarkMode ?
+                                        'services__modal-info-dark-mode' :
+                                        'services__modal-info-light-mode'}`}>
                                         I implement and connect apps.
                                     </p>
                                 </li>
 
                                 <li className="services__modal-service">
-                                    <i className="uil uil-check-circle services__modal-icon"></i>
-                                    <p className="services__modal-info">
+                                    <i className={`uil uil-check-circle services__modal-icon 
+                                        ${isDarkMode ? 'uil-check-circle-dark-mode services__modal-icon-dark-mode' : 
+                                        'uil-check-circle-light-mode services__modal-icon-light-mode'}`}></i>
+                                    <p className={`services__modal-info ${isDarkMode ?
+                                        'services__modal-info-dark-mode' :
+                                        'services__modal-info-light-mode'}`}>
                                         Web page development.
                                     </p>
                                 </li>
@@ -131,44 +157,64 @@ export const Services = () => {
                             ${isDarkMode ? "services__modal-title-dark-mode" : 
                                 "services__modal-title-light-mode"}`}>Backend Developer</h3>
                             <p className={`services__modal-description ${isDarkMode ? 
-                                "services__modal-description -dark-mode" :
-                                "services__modal-description -light-mode"}`}>
+                                "services__modal-description-dark-mode" :
+                                "services__modal-description-light-mode"}`}>
                                 Service with one year of experience in
                                 full-stack Java & React programming.
                             </p>
 
                             <ul className="services__modal-services grid">
                                 <li className="services__modal-service">
-                                    <i className="uil uil-check-circle services__modal-icon"></i>
-                                    <p className="services__modal-info">
+                                    <i className={`uil uil-check-circle services__modal-icon 
+                                        ${isDarkMode ? 'uil-check-circle-dark-mode services__modal-icon-dark-mode' : 
+                                        'uil-check-circle-light-mode services__modal-icon-light-mode'}`}></i>
+                                    <p className={`services__modal-info ${isDarkMode ?
+                                        'services__modal-info-dark-mode' :
+                                        'services__modal-info-light-mode'}`}>
                                         I create database.
                                     </p>
                                 </li>
 
                                 <li className="services__modal-service">
-                                    <i className="uil uil-check-circle services__modal-icon"></i>
-                                    <p className="services__modal-info">
+                                    <i className={`uil uil-check-circle services__modal-icon 
+                                        ${isDarkMode ? 'uil-check-circle-dark-mode services__modal-icon-dark-mode' : 
+                                        'uil-check-circle-light-mode services__modal-icon-light-mode'}`}></i>
+                                    <p className={`services__modal-info ${isDarkMode ?
+                                        'services__modal-info-dark-mode' :
+                                        'services__modal-info-light-mode'}`}>
                                         I develop backend app.
                                     </p>
                                 </li>
 
                                 <li className="services__modal-service">
-                                    <i className="uil uil-check-circle services__modal-icon"></i>
-                                    <p className="services__modal-info">
+                                    <i className={`uil uil-check-circle services__modal-icon 
+                                        ${isDarkMode ? 'uil-check-circle-dark-mode services__modal-icon-dark-mode' : 
+                                        'uil-check-circle-light-mode services__modal-icon-light-mode'}`}></i>
+                                    <p className={`services__modal-info ${isDarkMode ?
+                                        'services__modal-info-dark-mode' :
+                                        'services__modal-info-light-mode'}`}>
                                         I develop frontend app.
                                     </p>
                                 </li>
 
                                 <li className="services__modal-service">
-                                    <i className="uil uil-check-circle services__modal-icon"></i>
-                                    <p className="services__modal-info">
+                                    <i className={`uil uil-check-circle services__modal-icon 
+                                        ${isDarkMode ? 'uil-check-circle-dark-mode services__modal-icon-dark-mode' : 
+                                        'uil-check-circle-light-mode services__modal-icon-light-mode'}`}></i>
+                                    <p className={`services__modal-info ${isDarkMode ?
+                                        'services__modal-info-dark-mode' :
+                                        'services__modal-info-light-mode'}`}>
                                         I implement and connect apps.
                                     </p>
                                 </li>
 
                                 <li className="services__modal-service">
-                                    <i className="uil uil-check-circle services__modal-icon"></i>
-                                    <p className="services__modal-info">
+                                    <i className={`uil uil-check-circle services__modal-icon 
+                                        ${isDarkMode ? 'uil-check-circle-dark-mode services__modal-icon-dark-mode' : 
+                                        'uil-check-circle-light-mode services__modal-icon-light-mode'}`}></i>
+                                    <p className={`services__modal-info ${isDarkMode ?
+                                        'services__modal-info-dark-mode' :
+                                        'services__modal-info-light-mode'}`}>
                                         Web page development.
                                     </p>
                                 </li>
@@ -203,48 +249,76 @@ export const Services = () => {
                     <div className={toggleState === 3 ?
                         'services__modal active-modal' :
                         "services__modal"}>
-                        <div className={`services__modal-content ${isDarkMode ? "services__modal-content-dark-mode" : "services__modal-content-light-mode"}`}>
+                        <div className={`services__modal-content ${isDarkMode ? 
+                            "services__modal-content-dark-mode" : 
+                            "services__modal-content-light-mode"}`}>
                             <i onClick={() => toggleTab(0)}
-                               className="uil uil-times services__modal-close"></i>
+                               className={`uil uil-times services__modal-close ${isDarkMode ? 
+                                   'uil-times-dark-mode services__modal-close-dark-mode' : 
+                                   'uil-times-light-mode services__modal-close-light-mode'}`}></i>
 
-                            <h3 className="services__modal-title">Frontend Developer</h3>
-                            <p className="services__modal-description">
+                            <h3 className={`services__modal-title 
+                            ${isDarkMode ? "services__modal-title-dark-mode" :
+                                "services__modal-title-light-mode"}`}>Frontend Developer</h3>
+                            <p className={`services__modal-description ${isDarkMode ?
+                                "services__modal-description-dark-mode" :
+                                "services__modal-description-light-mode"}`}>
                                 Service with one year of experience in
                                 full-stack Java & React programming.
                             </p>
 
                             <ul className="services__modal-services grid">
                                 <li className="services__modal-service">
-                                    <i className="uil uil-check-circle services__modal-icon"></i>
-                                    <p className="services__modal-info">
+                                    <i className={`uil uil-check-circle services__modal-icon 
+                                        ${isDarkMode ? 'uil-check-circle-dark-mode services__modal-icon-dark-mode' : 
+                                        'uil-check-circle-light-mode services__modal-icon-light-mode'}`}></i>
+                                    <p className={`services__modal-info ${isDarkMode ?
+                                        'services__modal-info-dark-mode' :
+                                        'services__modal-info-light-mode'}`}>
                                         I create database.
                                     </p>
                                 </li>
 
                                 <li className="services__modal-service">
-                                    <i className="uil uil-check-circle services__modal-icon"></i>
-                                    <p className="services__modal-info">
+                                    <i className={`uil uil-check-circle services__modal-icon 
+                                        ${isDarkMode ? 'uil-check-circle-dark-mode services__modal-icon-dark-mode' : 
+                                        'uil-check-circle-light-mode services__modal-icon-light-mode'}`}></i>
+                                    <p className={`services__modal-info ${isDarkMode ?
+                                        'services__modal-info-dark-mode' :
+                                        'services__modal-info-light-mode'}`}>
                                         I develop backend app.
                                     </p>
                                 </li>
 
                                 <li className="services__modal-service">
-                                    <i className="uil uil-check-circle services__modal-icon"></i>
-                                    <p className="services__modal-info">
+                                    <i className={`uil uil-check-circle services__modal-icon 
+                                        ${isDarkMode ? 'uil-check-circle-dark-mode services__modal-icon-dark-mode' : 
+                                        'uil-check-circle-light-mode services__modal-icon-light-mode'}`}></i>
+                                    <p className={`services__modal-info ${isDarkMode ?
+                                        'services__modal-info-dark-mode' :
+                                        'services__modal-info-light-mode'}`}>
                                         I develop frontend app.
                                     </p>
                                 </li>
 
                                 <li className="services__modal-service">
-                                    <i className="uil uil-check-circle services__modal-icon"></i>
-                                    <p className="services__modal-info">
+                                    <i className={`uil uil-check-circle services__modal-icon 
+                                        ${isDarkMode ? 'uil-check-circle-dark-mode services__modal-icon-dark-mode' : 
+                                        'uil-check-circle-light-mode services__modal-icon-light-mode'}`}></i>
+                                    <p className={`services__modal-info ${isDarkMode ?
+                                        'services__modal-info-dark-mode' :
+                                        'services__modal-info-light-mode'}`}>
                                         I implement and connect apps.
                                     </p>
                                 </li>
 
                                 <li className="services__modal-service">
-                                    <i className="uil uil-check-circle services__modal-icon"></i>
-                                    <p className="services__modal-info">
+                                    <i className={`uil uil-check-circle services__modal-icon 
+                                        ${isDarkMode ? 'uil-check-circle-dark-mode services__modal-icon-dark-mode' : 
+                                        'uil-check-circle-light-mode services__modal-icon-light-mode'}`}></i>
+                                    <p className={`services__modal-info ${isDarkMode ?
+                                        'services__modal-info-dark-mode' :
+                                        'services__modal-info-light-mode'}`}>
                                         Web page development.
                                     </p>
                                 </li>
