@@ -8,16 +8,30 @@
 
 .work__item {
     cursor: pointer;
-    color: var(--title-color);
     padding: 0.25rem 0.75rem;
     font-weight: var(--font-medium);
     border-radius: 0.5rem;
     text-transform: capitalize;
 }
 
-.work__item:hover {
-    background-color: var(--title-color);
+.work__item-light-mode {
+    color: var(--title-color);
+    /*transition: 2s;*/
+}
+
+.work__item-dark-mode {
+    color: var(--body-color);
+}
+
+
+.work__item-light-mode:hover {
+    background-color: var(--text-color);
     color: var(--container-color);
+}
+
+.work__item-dark-mode:hover {
+    background-color: var(--text-color);
+    color: var(--body-color);
 }
 
 .work__container {
@@ -88,8 +102,12 @@
 }
 
 /* active work*/
-.active-work {
-    background-color: var(--title-color);
+.active-work-light-mode {
+    background-color: var(--body-color);
+}
+
+.active-work-dark-mode {
+    background-color: var(--text-color);
     color: var(--container-color);
 }
 

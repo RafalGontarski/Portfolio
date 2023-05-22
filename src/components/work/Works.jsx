@@ -1,12 +1,14 @@
-import React, {useEffect, useState} from "react";
+import React, {useContext, useEffect, useState} from "react";
 import {projectsData, projectNav} from "./Data";
 import {WorkItems} from "./WorkItems";
 import './work.css';
+import {DarkModeContext} from "../../context/DarkModeContext";
 
 export const Works = () => {
     const [item, setItem] = useState({name: 'all'});
     const [projects, setProjects] = useState([]);
     const [active, setActive] = useState(0);
+    const { isDarkMode} = useContext(DarkModeContext);
 
     useEffect(() => {
         if (item.name === 'all') {
@@ -34,8 +36,8 @@ export const Works = () => {
                             onClick={(e) => {
                                 handleClick(e, index);
                             }}
-                            className={`${active === index ? 'active-work' : ''}
-                            work__item`}
+                            className={` ${active === index ? 'active-work-dark-mode' : ''} 
+            work__item ${isDarkMode ? 'work__item-dark-mode' : 'work__item-light-mode'}`}
                             key={index}>
                             {item.name}
                         </span>

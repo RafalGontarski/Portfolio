@@ -4,7 +4,7 @@ import {Works} from "./Works";
 import {DarkModeContext} from "../../context/DarkModeContext";
 
 export const Work = () => {
-    const { isDarkMode, toggleDarkMode } = useContext(DarkModeContext);
+    const { isDarkMode} = useContext(DarkModeContext);
     return (
         <section className="work section" id="portfolio">
             <h2 className={`section__title ${isDarkMode ? "section__title-dark-mode" : "section__title-light-mode"}`}>Portfolio</h2>
