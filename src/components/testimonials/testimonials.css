@@ -10,6 +10,16 @@
     margin-bottom: var(--mb-3);
 }
 
+.testimonial__card-light-mode {
+    background-color: var(--container-color);
+    transition: 2s;
+}
+
+.testimonial__card-dark-mode {
+    background-color: var(--button-background-color-dark);
+    transition: 2s;
+}
+
 .testimonial__img {
     width: 60px;
     border-radius: 3rem;
@@ -20,10 +30,22 @@
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
     margin-bottom: var(--mb-0-25);
+    transition: 2s;
+}
+
+.testimonial__name-dark-mode {
+    color: var(--container-color);
+    transition: 2s;
 }
 
 .testimonial__description {
     font-size: var(--small-font-size);
+    transition: 2s;
+}
+
+.testimonial__description-dark-mode {
+    color: var(--title-color-white);
+    transition: 2s;
 }
 
 .swiper-pagination-bullet {
