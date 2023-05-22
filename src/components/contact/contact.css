@@ -24,6 +24,17 @@
     padding: 1rem;
     border-radius: 0.75rem;
     text-align: center;
+    transition: 2s;
+}
+
+.contact__card-light-mode {
+    background-color: var(--container-color);
+    transition: 2s;
+}
+
+.contact__card-dark-mode {
+    background-color: var(--button-background-color-dark);
+    transition: 2s;
 }
 
 .contact__card-icon {
@@ -32,9 +43,25 @@
     margin-bottom: var(--mb-0-25);
 }
 
-.contact_card-title,
+.contact__card-icon-light-mode {
+    color: var(--title-color);
+    transition: 2s;
+}
+
+.contact__card-icon-dark-mode {
+    color: var(--container-color);
+    transition: 2s;
+}
+
+.contact__card-title,
 .contact__card-data {
     font-size: var(--small-font-size);
+    transition: 2s;
+}
+
+.contact__card-title-dark-mode {
+    color: var(--container-color);
+    transition: 2s;
 }
 
 .contact__card-tittle {
@@ -44,15 +71,34 @@
 .contact__card-data {
     display: block;
     margin-bottom: var(--mb-0-75);
+    transition: 2s;
+}
+
+.contact__card-data-dark-mode {
+    color: var(--title-color-white);
+    transition: 2s;
 }
 
 .contact__button {
-    color: var(--text-color);
     font-size: var(--small-font-size);
     display: inline-flex;
     align-items: center;
     justify-content: center;
     column-gap: 0.25rem;
+}
+
+.contact__button-light-mode {
+    color: var(--text-color);
+    transition: 2s;
+}
+
+.contact__button-dark-mode {
+    color: var(--title-color-white);
+    transition: 2s;
+}
+
+.contact__button-dark-mode:hover {
+    color: var(--container-color);
 }
 
 .contact__button-icon {
@@ -80,13 +126,24 @@
     left: 0;
     width: 100%;
     height: 100%;
-    border: 2px solid rgba(0, 0, 0, 0.3);
     background: none;
-    color: var(--text-color);
     outline: none;
     border-radius: 0.75rem;
     padding: 1.5rem;
     z-index: 1;
+}
+
+.contact__form-input-light-mode {
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    color: var(--text-color);
+    transition: 2s;
+}
+
+.contact__form-input-dark-mode {
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-color: var(--text-color);
+    color: var(--container-color);
+    transition: 2s;
 }
 
 .contact__form-tag {
@@ -95,8 +152,18 @@
     left: 1.25rem;
     font-size: var(--smaller-font-size);
     padding: 0.25rem;
-    background-color: var(--body-color);
     z-index: 10;
+}
+
+.contact__form-tag-light-mode {
+    background-color: var(--body-color);
+    transition: 2s;
+}
+
+.contact__form-tag-dark-mode {
+    background-color: var(--title-color);
+    color: var(--container-color);
+    transition: 2s;
 }
 
 .contact__form-area {

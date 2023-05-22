@@ -32,40 +32,77 @@ export const Contact = () => {
 
             <div className="contact__container container grid">
                 <div className="contact__content">
-                    <h3 className="contact__title">Talk to me</h3>
+                    <h3 className={`contact__title ${isDarkMode ? 
+                        "section__title-dark-mode" : 
+                        "section__title-light-mode"}`}
+                        >Talk to me
+                    </h3>
 
                     <div className="contact__info">
-                        <div className="contact__card">
-                            <i className="bx bx-mail-send contact__card-icon"></i>
+                        <div className={`contact__card ${isDarkMode ? 
+                            "contact__card-dark-mode" : 
+                            "contact__card-light-mode"}`}>
+                            <i className={`bx bx-mail-send contact__card-icon ${isDarkMode ?
+                                "contact__card-icon-dark-mode" :
+                                "contact__card-icon-light-mode"}`}></i>
 
-                            <h3 className="contact_-card-title">Email </h3>
-                            <span className="contact__card-data">gontarskirafal@gmail.com</span>
+                            <h3 className={`contact__card-title ${isDarkMode ?
+                                "contact__card-title-dark-mode" :
+                                ""}`}>Email </h3>
+                            <span className={`contact__card-data ${isDarkMode ?
+                                "contact__card-data-dark-mode" :
+                                ""}`}>gontarskirafal@gmail.com</span>
 
-                            <a href="mailto:gontarskirafal@gmail.com" className="contact__button">Write me
+                            <a href="mailto:gontarskirafal@gmail.com"
+                               className={`contact__button ${isDarkMode ?
+                                   'contact__button-dark-mode' : 
+                                   'contact__button-light-mode'}`}
+                                    >Write me
                                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
                             </a>
 
                         </div>
 
-                        <div className="contact__card">
-                            <i className="bx bxl-whatsapp contact__card-icon"></i>
+                        <div className={`contact__card ${isDarkMode ? 
+                            "contact__card-dark-mode" : 
+                            "contact__card-light-mode"}`}>
+                            <i className={`bx bxl-whatsapp contact__card-icon ${isDarkMode ?
+                                "contact__card-icon-dark-mode" :
+                                "contact__card-icon-light-mode"}`}></i>
 
-                            <h3 className="contact_-card-title">Whatsapp</h3>
-                            <span className="contact__card-data">511-670-859</span>
+                            <h3 className={`contact__card-title ${isDarkMode ?
+                                "contact__card-title-dark-mode" :
+                                ""}`}>Whatsapp</h3>
+                            <span className={`contact__card-data ${isDarkMode ?
+                                "contact__card-data-dark-mode" :
+                                ""}`}>511-670-859</span>
 
-                            <a href="https://api.whatsapp.com/send?phone=48511670859&test=Hello, more information!" className="contact__button">Write me
+                            <a href="https://api.whatsapp.com/send?phone=48511670859&test=Hello, more information!"
+                               className={`contact__button ${isDarkMode ?
+                                   'contact__button-dark-mode' : 
+                                   'contact__button-light-mode'}`}>Write me
                                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
                             </a>
 
                         </div>
 
-                        <div className="contact__card">
-                            <i className="bx bxl-discord contact__card-icon"></i>
+                        <div className={`contact__card ${isDarkMode ? 
+                            "contact__card-dark-mode" : 
+                            "contact__card-light-mode"}`}>
+                            <i className={`bx bxl-discord contact__card-icon ${isDarkMode ?
+                                "contact__card-icon-dark-mode" :
+                                "contact__card-icon-light-mode"}`}></i>
 
-                            <h3 className="contact__card-title">Discord</h3>
-                            <span className="contact__card-data">RafalGontarski#1582</span>
+                            <h3 className={`contact__card-title ${isDarkMode ?
+                                "contact__card-title-dark-mode" :
+                                ""}`}>Discord</h3>
+                            <span className={`contact__card-data ${isDarkMode ?
+                                "contact__card-data-dark-mode" :
+                                ""}`}>RafalGontarski#1582</span>
 
-                            <a href="https://m.me/rafalgontarski" className="contact__button">Write me
+                            <a href="https://m.me/rafalgontarski" className={`contact__button ${isDarkMode ?
+                                   'contact__button-dark-mode' : 
+                                   'contact__button-light-mode'}`}>Write me
                                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
                             </a>
 
@@ -74,35 +111,51 @@ export const Contact = () => {
                 </div>
 
                 <div className="contact__content">
-                    <h3 className="contact__title">Write me your project</h3>
+                    <h3 className={`contact__title ${isDarkMode ? 
+                        "section__title-dark-mode" : 
+                        "section__title-light-mode"}`}
+                        >Write me your project
+                    </h3>
 
                     <form
                         ref={form} onSubmit={sendEmail} className="contact__form">
                         <div className="contact__form-div">
-                            <label className="contact__form-tag">Name</label>
+                            <label className={`contact__form-tag ${isDarkMode ?
+                                'contact__form-tag-dark-mode' :
+                                'contact__form-tag-light-mode'}`}>Name</label>
                             <input
                                 type="text"
                                 name='name'
-                                className='contact__form-input'
+                                className={`contact__form-input ${isDarkMode ?
+                                    'contact__form-input-dark-mode' :
+                                    'contact__form-input-light-mode'}`}
                                 placeholder='Insert your name'
                             />
                         </div>
 
                         <div className="contact__form-div">
-                            <label className="contact__form-tag">Mail</label>
+                            <label className={`contact__form-tag ${isDarkMode ?
+                                'contact__form-tag-dark-mode' :
+                                'contact__form-tag-light-mode'}`}>Mail</label>
                             <input
                                 type="email"
                                 name='email'
-                                className='contact__form-input'
+                                className={`contact__form-input ${isDarkMode ?
+                                    'contact__form-input-dark-mode' :
+                                    'contact__form-input-light-mode'}`}
                                 placeholder='Insert your email'
                             />
                         </div>
 
                         <div className="contact__form-div contact__form-area">
-                            <label className="contact__form-tag">Project</label>
+                            <label className={`contact__form-tag ${isDarkMode ?
+                                'contact__form-tag-dark-mode' :
+                                'contact__form-tag-light-mode'}`}>Project</label>
                             <textarea
                                 name="project" cols="30" rows="10"
-                                className='contact__form-input'
+                                className={`contact__form-input ${isDarkMode ?
+                                    'contact__form-input-dark-mode' :
+                                    'contact__form-input-light-mode'}`}
                                 placeholder='Write your project'></textarea>
                         </div>
 
