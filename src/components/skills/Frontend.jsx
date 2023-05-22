@@ -1,45 +1,47 @@
-import React from "react";
+import React, {useContext} from "react";
+import {DarkModeContext} from "../../context/DarkModeContext";
 
 export const Frontend = () => {
+    const { isDarkMode, toggleDarkMode } = useContext(DarkModeContext);
     return (
-        <div className='skills__content'>
-            <h3 className="skills__title">Frontend Developer</h3>
+        <div className={`skills__content ${isDarkMode ? "skills__content-dark-mode" : "skills__content-light-mode"}`}>
+            <h3 className={`skills__title ${isDarkMode ? "skills__title-dark-mode" : "skills__title-light-mode"}`}>Frontend Developer</h3>
 
             <div className="skills__box">
                 <div className="skills__group">
                     <div className="skills__data">
-                        <i className='bx bxs-badge-check'></i>
+                        <i className={`bx bxs-badge-check ${isDarkMode ? "badge-check-dark-mode" : "badge-check-light-mode"}`}></i>
 
                         <div>
-                            <h3 className="skills__name">React.js</h3>
-                            <span className="skills__level">Intermediate</span>
+                            <h3 className={`skills__name ${isDarkMode ? "skills__name-dark-mode" : "skills__name-light-mode"}`}>React.js</h3>
+                            <span className={`skills__level ${isDarkMode ? "skills__level-dark-mode" : "skills__level-light-mode"}`}>Intermediate</span>
                         </div>
                     </div>
 
                     <div className="skills__data">
-                        <i className='bx bxs-badge-check'></i>
+                        <i className={`bx bxs-badge-check ${isDarkMode ? "badge-check-dark-mode" : "badge-check-light-mode"}`}></i>
 
                         <div>
-                            <h3 className="skills__name">CSS</h3>
-                            <span className="skills__level">Intermediate</span>
+                            <h3 className={`skills__name ${isDarkMode ? "skills__name-dark-mode" : "skills__name-light-mode"}`}>CSS</h3>
+                            <span className={`skills__level ${isDarkMode ? "skills__level-dark-mode" : "skills__level-light-mode"}`}>Intermediate</span>
                         </div>
                     </div>
 
                     <div className="skills__data">
-                        <i className='bx bxs-badge-check'></i>
+                        <i className={`bx bxs-badge-check ${isDarkMode ? "badge-check-dark-mode" : "badge-check-light-mode"}`}></i>
 
                         <div>
-                            <h3 className="skills__name">Examplevvvvv</h3>
-                            <span className="skills__level">Intermediate</span>
+                            <h3 className={`skills__name ${isDarkMode ? "skills__name-dark-mode" : "skills__name-light-mode"}`}>Examplevvvvv</h3>
+                            <span className={`skills__level ${isDarkMode ? "skills__level-dark-mode" : "skills__level-light-mode"}`}>Intermediate</span>
                         </div>
                     </div>
 
                     <div className="skills__data">
-                        <i className='bx bxs-badge-check'></i>
+                        <i className={`bx bxs-badge-check ${isDarkMode ? "badge-check-dark-mode" : "badge-check-light-mode"}`}></i>
 
                         <div>
-                            <h3 className="skills__name">Sanity</h3>
-                            <span className="skills__level">Pre-intermediate</span>
+                            <h3 className={`skills__name ${isDarkMode ? "skills__name-dark-mode" : "skills__name-light-mode"}`}>Sanity</h3>
+                            <span className={`skills__level ${isDarkMode ? "skills__level-dark-mode" : "skills__level-light-mode"}`}>Pre-intermediate</span>
                         </div>
                     </div>
                 </div>
@@ -47,39 +49,39 @@ export const Frontend = () => {
                 <div className="skills__group">
 
                     <div className="skills__data">
-                        <i className='bx bxs-badge-check'></i>
+                        <i className={`bx bxs-badge-check ${isDarkMode ? "badge-check-dark-mode" : "badge-check-light-mode"}`}></i>
 
                         <div>
-                            <h3 className="skills__name">TypeScript</h3>
-                            <span className="skills__level">Intermediate</span>
+                            <h3 className={`skills__name ${isDarkMode ? "skills__name-dark-mode" : "skills__name-light-mode"}`}>TypeScript</h3>
+                            <span className={`skills__level ${isDarkMode ? "skills__level-dark-mode" : "skills__level-light-mode"}`}>Intermediate</span>
                         </div>
                     </div>
 
 
                     <div className="skills__data">
-                        <i className='bx bxs-badge-check'></i>
+                        <i className={`bx bxs-badge-check ${isDarkMode ? "badge-check-dark-mode" : "badge-check-light-mode"}`}></i>
 
                         <div>
-                            <h3 className="skills__name">HTML</h3>
-                            <span className="skills__level">Advanced</span>
+                            <h3 className={`skills__name ${isDarkMode ? "skills__name-dark-mode" : "skills__name-light-mode"}`}>HTML</h3>
+                            <span className={`skills__level ${isDarkMode ? "skills__level-dark-mode" : "skills__level-light-mode"}`}>Advanced</span>
                         </div>
                     </div>
 
                     <div className="skills__data">
-                        <i className='bx bxs-badge-check'></i>
+                        <i className={`bx bxs-badge-check ${isDarkMode ? "badge-check-dark-mode" : "badge-check-light-mode"}`}></i>
 
                         <div>
-                            <h3 className="skills__name">Bootstrap</h3>
-                            <span className="skills__level">Pre-Advanced</span>
+                            <h3 className={`skills__name ${isDarkMode ? "skills__name-dark-mode" : "skills__name-light-mode"}`}>Bootstrap</h3>
+                            <span className={`skills__level ${isDarkMode ? "skills__level-dark-mode" : "skills__level-light-mode"}`}>Pre-Advanced</span>
                         </div>
                     </div>
 
                     <div className="skills__data">
-                        <i className='bx bxs-badge-check'></i>
+                        <i className={`bx bxs-badge-check ${isDarkMode ? "badge-check-dark-mode" : "badge-check-light-mode"}`}></i>
 
                         <div>
-                            <h3 className="skills__name">Junit5</h3>
-                            <span className="skills__level">Basic</span>
+                            <h3 className={`skills__name ${isDarkMode ? "skills__name-dark-mode" : "skills__name-light-mode"}`}>Junit5</h3>
+                            <span className={`skills__level ${isDarkMode ? "skills__level-dark-mode" : "skills__level-light-mode"}`}>Basic</span>
                         </div>
                     </div>
                 </div>

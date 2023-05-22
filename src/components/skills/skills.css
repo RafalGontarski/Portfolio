@@ -5,10 +5,19 @@
 }
 
 .skills__content {
-    background-color: var(--container-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 2rem 4rem;
     border-radius: 1.25rem;
+}
+
+.skills__content-light-mode {
+    background-color: var(--container-color);
+    transition: 2s;
+}
+
+.skills__content-dark-mode {
+    background-color: var(--button-background-color-dark);
+    transition: 2s;
 }
 
 .skills__title {
@@ -16,6 +25,15 @@
     font-weight: var(--font-medium);
     text-align: center;
     margin-bottom: var(--mb-1-5);
+}
+
+.skills__title-light-mode {
+    transition: 2s;
+}
+
+.skills__title-dark-mode {
+    color: var(--container-color);
+    transition: 2s;
 }
 
 .skills__box {
@@ -46,8 +64,35 @@
     line-height: 18px;
 }
 
+.skills__name-light-mode {
+    transition: 2s;
+}
+
+.skills__name-dark-mode {
+    color: var(--container-color);
+    transition: 2s;
+}
+
 .skills__level {
     font-size: var(--tiny-font-size);
+}
+
+.skills__level-light-mode {
+    transition: 2s;
+}
+
+.skills__level-dark-mode {
+    color: var(--container-color);
+    transition: 2s;
+}
+
+.badge-check-light-mode {
+    transition: 2s;
+}
+
+.badge-check-dark-mode {
+    color: var(--container-color);
+    transition: 2s;
 }
 
 /* BREAKPOINTS */

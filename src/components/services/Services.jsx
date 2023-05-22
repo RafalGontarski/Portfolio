@@ -15,24 +15,34 @@ export const Services = () => {
             <span className={`section__subtitle ${isDarkMode ? "section__subtitle-dark-mode" : "section__subtitle-light-mode"}`}>What i Offer</span>
 
             <div className="services__container container grid">
-                <div className="services__content">
+                <div className={`services__content ${isDarkMode ? 
+                    'services__content-dark-mode' : 
+                    'services__content-light-mode'}`}>
                     <div>
-                        <i className="uil uil-database services__icon"></i>
-                        <h3 className="services__title">
+                        <i className={`uil uil-database services__icon ${isDarkMode ?
+                            'uil-database-dark-mode services__icon-dark-mode' :
+                            'uil-database-light-mode services__icon-light-mode'}`}></i>
+                        <h3 className={`services__title ${isDarkMode ? 
+                            'services__title-dark-mode' : 
+                            'services__title-light-mode'}`}>
                             Database <br /> Developer
                         </h3>
                     </div>
 
-                    <span className="services__button"
+                    <span className={`services__button ${isDarkMode ? 
+                        'services__button-dark-mode' : 
+                        'services__button-light-mode'}`}
                           onClick={() => toggleTab(1)}>
                         View More
-                        <i className="uil uil-arrow-right services__button-icon"></i>
+                        <i className={`uil uil-arrow-right services__button-icon ${isDarkMode ? 
+                            'uil-arrow-right-dark-mode services__button-icon-dark-mode' : 
+                            'uil-arrow-right-light-mode services__button-icon-light-mode'}`}></i>
                     </span>
 
                     <div className={toggleState === 1 ?
                         'services__modal active-modal' :
                         "services__modal"}>
-                        <div className="services__modal-content">
+                        <div className={`services__modal-content ${isDarkMode ? "services__modal-content-dark-mode" : "services__modal-content-light-mode"}`}>
                             <i className="uil uil-times services__modal-close"
                                onClick={() => toggleTab(0)}></i>
 
@@ -83,30 +93,46 @@ export const Services = () => {
 
                 </div>
 
-                <div className="services__content">
+                <div className={`services__content ${isDarkMode ? 'services__content-dark-mode' : 'services__content-light-mode'}`}>
                     <div>
-                        <i className="uil uil-server services__icon"></i>
-                        <h3 className="services__title">
+                        <i className={`uil uil-server services__icon ${isDarkMode ? 
+                            'uil-server-dark-mode services__icon-dark-mode' : 
+                            'uil-server-light-mode services__icon-light-mode'}`}></i>
+                        <h3 className={`services__title ${isDarkMode ? 
+                            'services__title-dark-mode' : 
+                            'services__title-light-mode'}`}>
                             Backend <br /> Developer
                         </h3>
                     </div>
 
-                    <span className="services__button"
+                    <span className={`services__button ${isDarkMode ? 
+                        'services__button-dark-mode' : 
+                        'services__button-light-mode'}`}
                           onClick={() => toggleTab(2)}>
                         View More
-                        <i className="uil uil-arrow-right services__button-icon"></i>
+                        <i className={`uil uil-arrow-right services__button-icon ${isDarkMode ? 
+                            'uil-arrow-right-dark-mode services__button-icon-dark-mode' : 
+                            'uil-arrow-right-light-mode services__button-icon-light-mode'}`}></i>
                     </span>
 
                     <div className={toggleState === 2 ?
                         'services__modal active-modal' :
                         "services__modal"}
                          >
-                        <div className="services__modal-content">
+                        <div className={`services__modal-content ${isDarkMode ? 
+                            "services__modal-content-dark-mode" : 
+                            "services__modal-content-light-mode"}`}>
                             <i onClick={() => toggleTab(0)}
-                               className="uil uil-times services__modal-close"></i>
+                               className={`uil uil-times services__modal-close 
+                               ${isDarkMode ? "uil uil-times-dark-mode services__modal-close-dark-mode" : 
+                                   "uil uil-times-light-mode services__modal-close-light-mode"}`}></i>
 
-                            <h3 className="services__modal-title">Backend Developer</h3>
-                            <p className="services__modal-description">
+                            <h3 className={`services__modal-title 
+                            ${isDarkMode ? "services__modal-title-dark-mode" : 
+                                "services__modal-title-light-mode"}`}>Backend Developer</h3>
+                            <p className={`services__modal-description ${isDarkMode ? 
+                                "services__modal-description -dark-mode" :
+                                "services__modal-description -light-mode"}`}>
                                 Service with one year of experience in
                                 full-stack Java & React programming.
                             </p>
@@ -152,24 +178,32 @@ export const Services = () => {
 
                 </div>
 
-                <div className="services__content">
+                <div className={`services__content ${isDarkMode ? 'services__content-dark-mode' : 'services__content-light-mode'}`}>
                     <div>
-                        <i className="uil uil-web-grid services__icon"></i>
-                        <h3 className="services__title">
+                        <i className={`uil uil-web-grid services__icon ${isDarkMode ?
+                            'uil-web-grid-dark-mode services__icon-dark-mode' :
+                            'uil-web-grid-light-mode services__icon-light-mode'}`}></i>
+                        <h3 className={`services__title ${isDarkMode ? 
+                            'services__title-dark-mode' : 
+                            'services__title-light-mode'}`}>
                             Frontend <br /> Developer
                         </h3>
                     </div>
 
                     <span onClick={() => toggleTab(3)}
-                          className="services__button">
+                          className={`services__button ${isDarkMode ? 
+                        'services__button-dark-mode' : 
+                        'services__button-light-mode'}`}>
                         View More
-                        <i className="uil uil-arrow-right services__button-icon"></i>
+                        <i className={`uil uil-arrow-right services__button-icon ${isDarkMode ? 
+                            'uil-arrow-right-dark-mode services__button-icon-dark-mode' : 
+                            'uil-arrow-right-light-mode services__button-icon-light-mode'}`}></i>
                     </span>
 
                     <div className={toggleState === 3 ?
                         'services__modal active-modal' :
                         "services__modal"}>
-                        <div className="services__modal-content">
+                        <div className={`services__modal-content ${isDarkMode ? "services__modal-content-dark-mode" : "services__modal-content-light-mode"}`}>
                             <i onClick={() => toggleTab(0)}
                                className="uil uil-times services__modal-close"></i>
 
