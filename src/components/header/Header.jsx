@@ -2,6 +2,7 @@ import React, {useContext, useState} from 'react';
 import './header.css';
 import {DarkModeContext} from "../../context/DarkModeContext";
 
+
 export const Header = () => {
     /* ================ Change Background Header =================*/
     window.addEventListener('scroll', function () {
@@ -101,12 +102,36 @@ export const Header = () => {
                      onClick={() => showMenu(!Toggle)}>
                     <i className="uil uil-apps"></i>
                 </div>
-                <a><i className={isDarkMode ?
-                      "uil uil-moon light-mode" : "uil uil-brightness nav__link"}
-                      id='toggleDark'
-                      onClick={toggleDarkMode}></i></a>
-
+                {/*<ToggleButton/>*/}
+                <i className={isDarkMode ?
+                    "uil uil-moon light-mode" : "uil uil-brightness nav__link"}
+                   id='toggleDark'
+                   onClick={toggleDarkMode}></i>
             </nav>
         </header>
     )
+}
+
+export function ToggleButton() {
+    const { isDarkMode, toggleDarkMode } = useContext(DarkModeContext);
+    const body = document.querySelector('body');
+    const toggle = document.getElementsByClassName('.indicator');
+    toggle.onclick = function(){
+        toggle.classList.toggle('active')
+        // body.classList.toggle('active')
+    }
+    return (
+
+        <div id='toggle'>
+
+            <i className={`indicator ${isDarkMode ?
+                "light-mode" : ""}`} onClick={toggleDarkMode}></i>
+            {/*<i className={isDarkMode ?*/}
+            {/*    "uil uil-moon light-mode" : "uil uil-brightness nav__link"}*/}
+            {/*   id='toggleDark'*/}
+            {/*   onClick={toggleDarkMode}></i>*/}
+        </div>
+
+
+    );
 }

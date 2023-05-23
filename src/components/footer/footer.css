@@ -73,8 +73,8 @@
 }
 
 .footer__social-link-dark-mode {
-    background-color: var(--button-background-color-white);
-    transition: 2s;
+    background-color: var(--button-background-color-dark);
+    /*transition: 2s;*/
 }
 
 .footer__social-link:hover {

@@ -1,3 +1,43 @@
+#toggle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1.8rem; /* Ustawienie szerokości na 2rem */
+    height: calc(2rem * 160 / 360); /* Obliczenie wysokości w proporcji */
+    border-radius: calc(2rem * 160 / 360); /* Obliczenie promienia w proporcji */
+    background-color: var(--footer_dark-color);
+    cursor: pointer;
+    box-shadow: inset 0 calc(0.5rem * 160 / 360) calc(3.75rem * 160 / 360) rgba(0, 0, 0, 0.1),
+                inset 0 calc(0.5rem * 160 / 360) calc(0.5rem * 160 / 360) rgba(0, 0, 0, 0.1),
+                inset 0 calc(-0.25rem * 160 / 360) calc(0.25rem * 160 / 360) rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+}
+
+#toggle.active {
+    background: var(--container-color);
+    transition: 2s;
+}
+
+#toggle .indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(2rem * 160 / 360);;
+    height: calc(2rem * 160 / 360);;
+    background: linear-gradient(to bottom, var(--title-color), var(--footer_dark-color));
+    border-radius: 50%;
+    transform: scale(0.85);
+    box-shadow: 0 calc(0rem * 160 / 360) calc(0.1rem * 160 / 360) rgba(255, 255, 255, 0.5),
+                inset 0 calc(0.25rem * 160 / 360) calc(0.25rem * 160 / 360) rgba(255, 255, 255, 0.2),
+                inset 0 calc(-0.25rem * 160 / 360) calc(0.25rem * 160 / 360) rgba(255, 255, 255, 0.2);
+    transition: 0.5s;
+}
+
+#toggle.active .indicator {
+    left: calc(2rem * 160 / 360);;
+}
+
 .header {
     width: 100%;
     position: fixed;

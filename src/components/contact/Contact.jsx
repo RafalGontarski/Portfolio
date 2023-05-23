@@ -8,7 +8,7 @@ import {DarkModeContext} from "../../context/DarkModeContext";
 
 export const Contact = () => {
     const form = useRef();
-    const { isDarkMode, toggleDarkMode } = useContext(DarkModeContext);
+    const { isDarkMode} = useContext(DarkModeContext);
     const notify = () =>
         toast.success('Success sending !', {
             position: toast.POSITION.TOP_RIGHT
