@@ -1,11 +1,13 @@
 import React, {useContext} from "react";
 import {DarkModeContext} from "../../context/DarkModeContext";
+import {useTranslation} from "react-i18next";
 
 export const Scrum = () => {
-    const { isDarkMode, toggleDarkMode } = useContext(DarkModeContext);
+    const { isDarkMode } = useContext(DarkModeContext);
+    const [t] = useTranslation("global");
     return (
         <div className={`skills__content ${isDarkMode ? "skills__content-dark-mode" : "skills__content-light-mode"}`}>
-            <h3 className={`skills__title ${isDarkMode ? "skills__title-dark-mode" : "skills__title-light-mode"}`}>Other</h3>
+            <h3 className={`skills__title ${isDarkMode ? "skills__title-dark-mode" : "skills__title-light-mode"}`}>{t("skills.content.other.title")}</h3>
 
             <div className="skills__box">
                 <div className="skills__group">
@@ -14,7 +16,7 @@ export const Scrum = () => {
 
                         <div>
                             <h3 className={`skills__name ${isDarkMode ? "skills__name-dark-mode" : "skills__name-light-mode"}`}>Jira</h3>
-                            <span className={`skills__level ${isDarkMode ? "skills__level-dark-mode" : "skills__level-light-mode"}`}>Intermediate</span>
+                            <span className={`skills__level ${isDarkMode ? "skills__level-dark-mode" : "skills__level-light-mode"}`}>{t("skills.level.intermediate")}</span>
                         </div>
                     </div>
 
@@ -23,7 +25,7 @@ export const Scrum = () => {
 
                         <div>
                             <h3 className={`skills__name ${isDarkMode ? "skills__name-dark-mode" : "skills__name-light-mode"}`}>Grooming</h3>
-                            <span className={`skills__level ${isDarkMode ? "skills__level-dark-mode" : "skills__level-light-mode"}`}>Basic</span>
+                            <span className={`skills__level ${isDarkMode ? "skills__level-dark-mode" : "skills__level-light-mode"}`}>{t("skills.level.basic")}</span>
                         </div>
                     </div>
 
@@ -32,7 +34,7 @@ export const Scrum = () => {
 
                         <div>
                             <h3 className={`skills__name ${isDarkMode ? "skills__name-dark-mode" : "skills__name-light-mode"}`}>Git</h3>
-                            <span className={`skills__level ${isDarkMode ? "skills__level-dark-mode" : "skills__level-light-mode"}`}>Basic</span>
+                            <span className={`skills__level ${isDarkMode ? "skills__level-dark-mode" : "skills__level-light-mode"}`}>{t("skills.level.basic")}</span>
                         </div>
                     </div>
 
@@ -40,10 +42,11 @@ export const Scrum = () => {
                         <i className={`bx bxs-badge-check ${isDarkMode ? "badge-check-dark-mode" : "badge-check-light-mode"}`}></i>
 
                         <div>
-                            <h3 className={`skills__name ${isDarkMode ? "skills__name-dark-mode" : "skills__name-light-mode"}`}>Community</h3>
-                            <span className={`skills__level ${isDarkMode ? "skills__level-dark-mode" : "skills__level-light-mode"}`}>Advanced</span>
+                            <h3 className={`skills__name ${isDarkMode ? "skills__name-dark-mode" : "skills__name-light-mode"}`}>DevOps</h3>
+                            <span className={`skills__level ${isDarkMode ? "skills__level-dark-mode" : "skills__level-light-mode"}`}>{t("skills.level.preBasic")}</span>
                         </div>
                     </div>
+
                 </div>
 
                 <div className="skills__group">
@@ -52,7 +55,7 @@ export const Scrum = () => {
 
                         <div>
                             <h3 className={`skills__name ${isDarkMode ? "skills__name-dark-mode" : "skills__name-light-mode"}`}>Scrum</h3>
-                            <span className={`skills__level ${isDarkMode ? "skills__level-dark-mode" : "skills__level-light-mode"}`}>Basic</span>
+                            <span className={`skills__level ${isDarkMode ? "skills__level-dark-mode" : "skills__level-light-mode"}`}>{t("skills.level.basic")}</span>
                         </div>
                     </div>
 
@@ -61,7 +64,7 @@ export const Scrum = () => {
 
                         <div>
                             <h3 className={`skills__name ${isDarkMode ? "skills__name-dark-mode" : "skills__name-light-mode"}`}>Docker</h3>
-                            <span className={`skills__level ${isDarkMode ? "skills__level-dark-mode" : "skills__level-light-mode"}`}>Basic</span>
+                            <span className={`skills__level ${isDarkMode ? "skills__level-dark-mode" : "skills__level-light-mode"}`}>{t("skills.level.basic")}</span>
                         </div>
                     </div>
 
@@ -69,8 +72,8 @@ export const Scrum = () => {
                         <i className={`bx bxs-badge-check ${isDarkMode ? "badge-check-dark-mode" : "badge-check-light-mode"}`}></i>
 
                         <div>
-                            <h3 className={`skills__name ${isDarkMode ? "skills__name-dark-mode" : "skills__name-light-mode"}`}>Example</h3>
-                            <span className={`skills__level ${isDarkMode ? "skills__level-dark-mode" : "skills__level-light-mode"}`}>Advanced</span>
+                            <h3 className={`skills__name ${isDarkMode ? "skills__name-dark-mode" : "skills__name-light-mode"}`}>Teamwork</h3>
+                            <span className={`skills__level ${isDarkMode ? "skills__level-dark-mode" : "skills__level-light-mode"}`}>{t("skills.level.intermediate")}</span>
                         </div>
                     </div>
 
@@ -78,8 +81,8 @@ export const Scrum = () => {
                         <i className={`bx bxs-badge-check ${isDarkMode ? "badge-check-dark-mode" : "badge-check-light-mode"}`}></i>
 
                         <div>
-                            <h3 className={`skills__name ${isDarkMode ? "skills__name-dark-mode" : "skills__name-light-mode"}`}>JUnit</h3>
-                            <span className={`skills__level ${isDarkMode ? "skills__level-dark-mode" : "skills__level-light-mode"}`}>Basic</span>
+                            <h3 className={`skills__name ${isDarkMode ? "skills__name-dark-mode" : "skills__name-light-mode"}`}>Problem Solving</h3>
+                            <span className={`skills__level ${isDarkMode ? "skills__level-dark-mode" : "skills__level-light-mode"}`}>{t("skills.level.intermediate")}</span>
                         </div>
                     </div>
                 </div>

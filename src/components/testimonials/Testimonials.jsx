@@ -11,20 +11,22 @@ import "swiper/css/pagination";
 // import required modules
 import { Pagination } from "swiper";
 import {DarkModeContext} from "../../context/DarkModeContext";
+import {useTranslation} from "react-i18next";
 
 export const Testimonials = () => {
     const { isDarkMode} = useContext(DarkModeContext);
+    const [t] = useTranslation("global");
     return (
         <section className="testimonials section" id="testimonials">
             <h2 className={`section__title ${isDarkMode ? 
                 "section__title-dark-mode" : 
                 "section__title-light-mode"}`}
-                >Recommendation
+                >{t("recommendation.title")}
             </h2>
             <span className={`section__subtitle ${isDarkMode ? 
                 "section__subtitle-dark-mode" : 
                 "section__subtitle-light-mode"}`}>
-                Testimonial
+                {t("recommendation.subtitle")}
             </span>
 
             <Swiper className='testimonial__container'

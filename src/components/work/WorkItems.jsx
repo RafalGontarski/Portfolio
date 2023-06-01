@@ -1,11 +1,13 @@
 import React, {useContext, useRef, useState} from "react";
 import '../services/services.css';
 import {DarkModeContext} from "../../context/DarkModeContext";
+import {useTranslation} from "react-i18next";
 
-export const WorkItems = ({ item}) => {
+export const WorkItems = ({ item }) => {
     const[toggleState, setToggleState] = useState(0);
     const { isDarkMode} = useContext(DarkModeContext);
     const imgRef = useRef();
+    const [t] = useTranslation("global");
 
     const openFullscreen = () => {
         if (imgRef.current.requestFullscreen) {
@@ -49,7 +51,7 @@ export const WorkItems = ({ item}) => {
                 'work__title-dark-mode' : 'work__title-light-mode'}`}>{item.title}</h3>
             <a href={item.url} className={`work__button ${isDarkMode ?
                 'work__button-dark-mode' : 'work__button-light-mode'}`} >
-                Repository <i className='bx bx-right-arrow-alt work__button-icon'></i>
+                {t("portfolio.workItem.button")} <i className='bx bx-right-arrow-alt work__button-icon'></i>
             </a>
 
 
@@ -68,7 +70,7 @@ export const WorkItems = ({ item}) => {
                         'work__modal-title-dark-mode' : ''}`}>{item.title}</h3>
                     <a href={item.url} className={`work__button-modal ${isDarkMode ?
                         'work__button-modal-dark-mode' : 'work__button-modal-light-mode'}`} >
-                        Repository <i className="bx bx-right-arrow-alt work__button-icon"></i>
+                        {t("portfolio.workItem.button")} <i className="bx bx-right-arrow-alt work__button-icon"></i>
                     </a>
 
                     <video src={item.movie}  className='work__giff'

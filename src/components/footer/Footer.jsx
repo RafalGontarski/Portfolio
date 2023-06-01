@@ -2,9 +2,11 @@ import React, {useContext} from 'react';
 import './footer.css';
 
 import {DarkModeContext} from "../../context/DarkModeContext";
+import {useTranslation} from "react-i18next";
 
 export const Footer = () => {
     const { isDarkMode } = useContext(DarkModeContext);
+    const [t] = useTranslation("global");
     return (
         <footer className={`footer ${isDarkMode ? "footer__dark-mode" : "footer__light-mode"}`}>
             <div className="footer__container container">
@@ -12,13 +14,13 @@ export const Footer = () => {
 
                 <ul className="footer__list">
                     <li>
-                        <a href="#about" className={`footer__link ${isDarkMode ? "footer__link-dark-mode" : ""}`}>About</a>
+                        <a href="#about" className={`footer__link ${isDarkMode ? "footer__link-dark-mode" : ""}`}>{t("footer.about")}</a>
                     </li>
                     <li>
-                        <a href="#portfolio" className={`footer__link ${isDarkMode ? "footer__link-dark-mode" : ""}`}>Projects</a>
+                        <a href="#portfolio" className={`footer__link ${isDarkMode ? "footer__link-dark-mode" : ""}`}>{t("footer.projects")}</a>
                     </li>
                     <li>
-                        <a href="#testimonials" className={`footer__link ${isDarkMode ? "footer__link-dark-mode" : ""}`}>Testimonials</a>
+                        <a href="#testimonials" className={`footer__link ${isDarkMode ? "footer__link-dark-mode" : ""}`}>{t("footer.testimonials")}</a>
                     </li>
                 </ul>
 
@@ -53,7 +55,7 @@ export const Footer = () => {
 
                 </div>
                 <span className={`footer__copy ${isDarkMode ? "footer__copy-dark-mode" : "footer__copy-light-mode"}`}>
-                        &#169; All rights reserved. Special thanks for <a className={`footer__link ${isDarkMode ? "footer__link-dark-mode" : ""}`} href="https://www.youtube.com/watch?v=3aCoZudPEKE&t=8797s">Cryptical Coder</a>.
+                        &#169; {t("footer.text")} <a className={`footer__link ${isDarkMode ? "footer__link-dark-mode" : ""}`} href="https://www.youtube.com/watch?v=3aCoZudPEKE&t=8797s">Cryptical Coder</a>.
                     </span>
             </div>
         </footer>

@@ -1,18 +1,20 @@
 import React, {useContext, useState} from "react";
 import './services.css';
 import {DarkModeContext} from "../../context/DarkModeContext";
+import {useTranslation} from "react-i18next";
 
 export const Services = () => {
     const[toggleState, setToggleState] = useState(0);
     const { isDarkMode} = useContext(DarkModeContext);
+    const [t] = useTranslation("global");
 
     const toggleTab = (index) => {
         setToggleState(index);
     }
     return (
         <section className="services section" id="services">
-            <h2 className={`section__title ${isDarkMode ? "section__title-dark-mode" : "section__title-light-mode"}`}>Services</h2>
-            <span className={`section__subtitle ${isDarkMode ? "section__subtitle-dark-mode" : "section__subtitle-light-mode"}`}>What i Offer</span>
+            <h2 className={`section__title ${isDarkMode ? "section__title-dark-mode" : "section__title-light-mode"}`}>{t("services.title")}</h2>
+            <span className={`section__subtitle ${isDarkMode ? "section__subtitle-dark-mode" : "section__subtitle-light-mode"}`}>{t("services.subtitle")}</span>
 
             <div className="services__container container grid">
                 <div className={`services__content ${isDarkMode ? 
@@ -25,7 +27,7 @@ export const Services = () => {
                         <h3 className={`services__title ${isDarkMode ? 
                             'services__title-dark-mode' : 
                             'services__title-light-mode'}`}>
-                            Database <br /> Developer
+                            {t("services.content.database.title1")} <br /> {t("services.content.database.title2")}
                         </h3>
                     </div>
 
@@ -33,7 +35,7 @@ export const Services = () => {
                         'services__button-dark-mode' : 
                         'services__button-light-mode'}`}
                           onClick={() => toggleTab(1)}>
-                        View More
+                        {t("services.button")}
                         <i className={`uil uil-arrow-right services__button-icon ${isDarkMode ? 
                             'uil-arrow-right-dark-mode services__button-icon-dark-mode' : 
                             'uil-arrow-right-light-mode services__button-icon-light-mode'}`}></i>
@@ -50,12 +52,11 @@ export const Services = () => {
 
                             <h3 className={`services__modal-title ${isDarkMode ?
                                 'services__modal-title-dark-mode' :
-                                'services__modal-title-light-mode'}`}>Database Developer</h3>
+                                'services__modal-title-light-mode'}`}>{t("services.modal.database.title")}</h3>
                             <p className={`services__modal-description ${isDarkMode ?
                                 'services__modal-description-dark-mode' :
                                 'services__modal-description-light-mode'}`}>
-                                Service with one year of experience in
-                                full-stack Java & React programming.
+                                {t("services.modal.database.subtitle")}
                             </p>
 
                             <ul className="services__modal-services grid">
@@ -66,7 +67,7 @@ export const Services = () => {
                                     <p className={`services__modal-info ${isDarkMode ?
                                         'services__modal-info-dark-mode' :
                                         'services__modal-info-light-mode'}`}>
-                                        I create database.
+                                        {t("services.modal.database.1")}
                                     </p>
                                 </li>
 
@@ -77,7 +78,7 @@ export const Services = () => {
                                     <p className={`services__modal-info ${isDarkMode ?
                                         'services__modal-info-dark-mode' :
                                         'services__modal-info-light-mode'}`}>
-                                        I develop backend app.
+                                        {t("services.modal.database.2")}
                                     </p>
                                 </li>
 
@@ -88,7 +89,7 @@ export const Services = () => {
                                     <p className={`services__modal-info ${isDarkMode ?
                                         'services__modal-info-dark-mode' :
                                         'services__modal-info-light-mode'}`}>
-                                        I develop frontend app.
+                                        {t("services.modal.database.3")}
                                     </p>
                                 </li>
 
@@ -99,7 +100,7 @@ export const Services = () => {
                                     <p className={`services__modal-info ${isDarkMode ?
                                         'services__modal-info-dark-mode' :
                                         'services__modal-info-light-mode'}`}>
-                                        I implement and connect apps.
+                                        {t("services.modal.database.4")}
                                     </p>
                                 </li>
 
@@ -110,7 +111,7 @@ export const Services = () => {
                                     <p className={`services__modal-info ${isDarkMode ?
                                         'services__modal-info-dark-mode' :
                                         'services__modal-info-light-mode'}`}>
-                                        Web page development.
+                                        {t("services.modal.database.5")}
                                     </p>
                                 </li>
                             </ul>
@@ -127,7 +128,7 @@ export const Services = () => {
                         <h3 className={`services__title ${isDarkMode ? 
                             'services__title-dark-mode' : 
                             'services__title-light-mode'}`}>
-                            Backend <br /> Developer
+                            {t("services.content.backend.title1")} <br /> {t("services.content.backend.title2")}
                         </h3>
                     </div>
 
@@ -135,7 +136,7 @@ export const Services = () => {
                         'services__button-dark-mode' : 
                         'services__button-light-mode'}`}
                           onClick={() => toggleTab(2)}>
-                        View More
+                        {t("services.button")}
                         <i className={`uil uil-arrow-right services__button-icon ${isDarkMode ? 
                             'uil-arrow-right-dark-mode services__button-icon-dark-mode' : 
                             'uil-arrow-right-light-mode services__button-icon-light-mode'}`}></i>
@@ -155,12 +156,11 @@ export const Services = () => {
 
                             <h3 className={`services__modal-title 
                             ${isDarkMode ? "services__modal-title-dark-mode" : 
-                                "services__modal-title-light-mode"}`}>Backend Developer</h3>
+                                "services__modal-title-light-mode"}`}>{t("services.modal.backend.title")}</h3>
                             <p className={`services__modal-description ${isDarkMode ? 
                                 "services__modal-description-dark-mode" :
                                 "services__modal-description-light-mode"}`}>
-                                Service with one year of experience in
-                                full-stack Java & React programming.
+                                {t("services.modal.backend.subtitle")}
                             </p>
 
                             <ul className="services__modal-services grid">
@@ -171,7 +171,7 @@ export const Services = () => {
                                     <p className={`services__modal-info ${isDarkMode ?
                                         'services__modal-info-dark-mode' :
                                         'services__modal-info-light-mode'}`}>
-                                        I create database.
+                                        {t("services.modal.backend.1")}
                                     </p>
                                 </li>
 
@@ -182,7 +182,7 @@ export const Services = () => {
                                     <p className={`services__modal-info ${isDarkMode ?
                                         'services__modal-info-dark-mode' :
                                         'services__modal-info-light-mode'}`}>
-                                        I develop backend app.
+                                        {t("services.modal.backend.2")}
                                     </p>
                                 </li>
 
@@ -193,7 +193,7 @@ export const Services = () => {
                                     <p className={`services__modal-info ${isDarkMode ?
                                         'services__modal-info-dark-mode' :
                                         'services__modal-info-light-mode'}`}>
-                                        I develop frontend app.
+                                        {t("services.modal.backend.3")}
                                     </p>
                                 </li>
 
@@ -204,7 +204,7 @@ export const Services = () => {
                                     <p className={`services__modal-info ${isDarkMode ?
                                         'services__modal-info-dark-mode' :
                                         'services__modal-info-light-mode'}`}>
-                                        I implement and connect apps.
+                                        {t("services.modal.backend.4")}
                                     </p>
                                 </li>
 
@@ -215,7 +215,7 @@ export const Services = () => {
                                     <p className={`services__modal-info ${isDarkMode ?
                                         'services__modal-info-dark-mode' :
                                         'services__modal-info-light-mode'}`}>
-                                        Web page development.
+                                        {t("services.modal.backend.5")}
                                     </p>
                                 </li>
                             </ul>
@@ -232,7 +232,7 @@ export const Services = () => {
                         <h3 className={`services__title ${isDarkMode ? 
                             'services__title-dark-mode' : 
                             'services__title-light-mode'}`}>
-                            Frontend <br /> Developer
+                            {t("services.content.frontend.title1")} <br /> {t("services.content.frontend.title2")}
                         </h3>
                     </div>
 
@@ -240,7 +240,7 @@ export const Services = () => {
                           className={`services__button ${isDarkMode ? 
                         'services__button-dark-mode' : 
                         'services__button-light-mode'}`}>
-                        View More
+                        {t("services.button")}
                         <i className={`uil uil-arrow-right services__button-icon ${isDarkMode ? 
                             'uil-arrow-right-dark-mode services__button-icon-dark-mode' : 
                             'uil-arrow-right-light-mode services__button-icon-light-mode'}`}></i>
@@ -259,12 +259,11 @@ export const Services = () => {
 
                             <h3 className={`services__modal-title 
                             ${isDarkMode ? "services__modal-title-dark-mode" :
-                                "services__modal-title-light-mode"}`}>Frontend Developer</h3>
+                                "services__modal-title-light-mode"}`}>{t("services.modal.frontend.title")}</h3>
                             <p className={`services__modal-description ${isDarkMode ?
                                 "services__modal-description-dark-mode" :
                                 "services__modal-description-light-mode"}`}>
-                                Service with one year of experience in
-                                full-stack Java & React programming.
+                                {t("services.modal.frontend.subtitle")}
                             </p>
 
                             <ul className="services__modal-services grid">
@@ -275,7 +274,7 @@ export const Services = () => {
                                     <p className={`services__modal-info ${isDarkMode ?
                                         'services__modal-info-dark-mode' :
                                         'services__modal-info-light-mode'}`}>
-                                        I create database.
+                                        {t("services.modal.frontend.1")}
                                     </p>
                                 </li>
 
@@ -286,7 +285,7 @@ export const Services = () => {
                                     <p className={`services__modal-info ${isDarkMode ?
                                         'services__modal-info-dark-mode' :
                                         'services__modal-info-light-mode'}`}>
-                                        I develop backend app.
+                                        {t("services.modal.frontend.2")}
                                     </p>
                                 </li>
 
@@ -297,7 +296,7 @@ export const Services = () => {
                                     <p className={`services__modal-info ${isDarkMode ?
                                         'services__modal-info-dark-mode' :
                                         'services__modal-info-light-mode'}`}>
-                                        I develop frontend app.
+                                        {t("services.modal.frontend.3")}
                                     </p>
                                 </li>
 
@@ -308,7 +307,7 @@ export const Services = () => {
                                     <p className={`services__modal-info ${isDarkMode ?
                                         'services__modal-info-dark-mode' :
                                         'services__modal-info-light-mode'}`}>
-                                        I implement and connect apps.
+                                        {t("services.modal.frontend.4")}
                                     </p>
                                 </li>
 
@@ -319,7 +318,7 @@ export const Services = () => {
                                     <p className={`services__modal-info ${isDarkMode ?
                                         'services__modal-info-dark-mode' :
                                         'services__modal-info-light-mode'}`}>
-                                        Web page development.
+                                        {t("services.modal.frontend.5")}
                                     </p>
                                 </li>
                             </ul>

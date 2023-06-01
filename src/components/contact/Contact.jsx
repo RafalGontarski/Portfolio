@@ -4,15 +4,18 @@ import './contact.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import {DarkModeContext} from "../../context/DarkModeContext";
+import {useTranslation} from "react-i18next";
 
 
 export const Contact = () => {
     const form = useRef();
     const { isDarkMode} = useContext(DarkModeContext);
-    const notify = () =>
-        toast.success('Success sending !', {
-            position: toast.POSITION.TOP_RIGHT
-        });
+    const [t] = useTranslation("global");
+
+    // const notify = () =>
+    //     toast.success('Success sending!', {
+    //         position: toast.POSITION.TOP_RIGHT
+    //     });
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -22,20 +25,30 @@ export const Contact = () => {
             'template_jw2uqbe',
             form.current,
             'llomuTlqWtnrTfYaL')
-            e.target.reset()
+            .then((result) => {
+                toast.success("Thank's! I'll answer soon", {
+                    position: toast.POSITION.TOP_RIGHT
+                })
+                e.target.reset()
+            }, (error) => {
+                toast.error('Something went wrong', {
+                    position: toast.POSITION.TOP_RIGHT
+                })
+            });
+
     };
 
     return (
         <section className="contact section" id="contact">
-            <h2 className={`section__title ${isDarkMode ? "section__title-dark-mode" : "section__title-light-mode"}`}>Get in touch</h2>
-            <span className={`section__subtitle ${isDarkMode ? "section__subtitle-dark-mode" : "section__subtitle-light-mode"}`}>Contact me</span>
+            <h2 className={`section__title ${isDarkMode ? "section__title-dark-mode" : "section__title-light-mode"}`}>{t("contact.title")}</h2>
+            <span className={`section__subtitle ${isDarkMode ? "section__subtitle-dark-mode" : "section__subtitle-light-mode"}`}>{t("contact.subtitle")}</span>
 
             <div className="contact__container container grid">
                 <div className="contact__content">
                     <h3 className={`contact__title ${isDarkMode ? 
                         "section__title-dark-mode" : 
                         "section__title-light-mode"}`}
-                        >Talk to me
+                        >{t("contact.container.talkToMe.title")}
                     </h3>
 
                     <div className="contact__info">
@@ -54,10 +67,11 @@ export const Contact = () => {
                                 ""}`}>gontarskirafal@gmail.com</span>
 
                             <a href="mailto:gontarskirafal@gmail.com"
+                               target='_blank'
                                className={`contact__button ${isDarkMode ?
                                    'contact__button-dark-mode' : 
                                    'contact__button-light-mode'}`}
-                                    >Write me
+                                    >{t("contact.container.talkToMe.content1.button")}
                                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
                             </a>
 
@@ -78,9 +92,10 @@ export const Contact = () => {
                                 ""}`}>511-670-859</span>
 
                             <a href="https://api.whatsapp.com/send?phone=48511670859&test=Hello, more information!"
+                               target='_blank'
                                className={`contact__button ${isDarkMode ?
                                    'contact__button-dark-mode' : 
-                                   'contact__button-light-mode'}`}>Write me
+                                   'contact__button-light-mode'}`}>{t("contact.container.talkToMe.content2.button")}
                                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
                             </a>
 
@@ -100,11 +115,12 @@ export const Contact = () => {
                                 "contact__card-data-dark-mode" :
                                 ""}`}>RafalGontarski#1582</span>
 
-                            <a href="https://m.me/rafalgontarski" className={`contact__button ${isDarkMode ?
-                                   'contact__button-dark-mode' : 
-                                   'contact__button-light-mode'}`}>Write me
-                                <i className="bx bx-right-arrow-alt contact__button-icon"></i>
-                            </a>
+                            {/*<a href="https://m.me/rafalgontarski" className={`contact__button ${isDarkMode ?*/}
+                            {/*       'contact__button-dark-mode' : */}
+                            {/*       'contact__button-light-mode'}`}>{t("contact.container.talkToMe.content3.button")}*/}
+                            {/*    <i className="bx bx-right-arrow-alt contact__button-icon"></i>*/}
+                            {/*</a>*/}
+                            <div><br/></div>
 
                         </div>
                     </div>
@@ -114,7 +130,7 @@ export const Contact = () => {
                     <h3 className={`contact__title ${isDarkMode ? 
                         "section__title-dark-mode" : 
                         "section__title-light-mode"}`}
-                        >Write me your project
+                        >{t("contact.container.writeToMe.title")}
                     </h3>
 
                     <form
@@ -122,45 +138,49 @@ export const Contact = () => {
                         <div className="contact__form-div">
                             <label className={`contact__form-tag ${isDarkMode ?
                                 'contact__form-tag-dark-mode' :
-                                'contact__form-tag-light-mode'}`}>Name</label>
+                                'contact__form-tag-light-mode'}`}>{t("contact.container.writeToMe.contactForm.name")}</label>
                             <input
                                 type="text"
                                 name='name'
                                 className={`contact__form-input ${isDarkMode ?
                                     'contact__form-input-dark-mode' :
                                     'contact__form-input-light-mode'}`}
-                                placeholder='Insert your name'
+                                placeholder={t("contact.container.writeToMe.contactForm.nameInput")}
                             />
                         </div>
 
                         <div className="contact__form-div">
                             <label className={`contact__form-tag ${isDarkMode ?
                                 'contact__form-tag-dark-mode' :
-                                'contact__form-tag-light-mode'}`}>Mail</label>
+                                'contact__form-tag-light-mode'}`}>{t("contact.container.writeToMe.contactForm.mail")}</label>
                             <input
                                 type="email"
                                 name='email'
                                 className={`contact__form-input ${isDarkMode ?
                                     'contact__form-input-dark-mode' :
                                     'contact__form-input-light-mode'}`}
-                                placeholder='Insert your email'
+                                placeholder={t("contact.container.writeToMe.contactForm.mailInput")}
                             />
                         </div>
 
                         <div className="contact__form-div contact__form-area">
                             <label className={`contact__form-tag ${isDarkMode ?
                                 'contact__form-tag-dark-mode' :
-                                'contact__form-tag-light-mode'}`}>Project</label>
+                                'contact__form-tag-light-mode'}`}>{t("contact.container.writeToMe.contactForm.project")}</label>
                             <textarea
                                 name="project" cols="30" rows="10"
                                 className={`contact__form-input ${isDarkMode ?
                                     'contact__form-input-dark-mode' :
                                     'contact__form-input-light-mode'}`}
-                                placeholder='Write your project'></textarea>
+                                placeholder={t("contact.container.writeToMe.contactForm.projectInput")}></textarea>
                         </div>
 
-                        <button className={`button button--flex ${isDarkMode ? "button__dark-mode" : "button__light-mode"}`} onClick={notify}>
-                            Send Message
+                        <button className={`button button--flex ${isDarkMode ? "button__dark-mode" : "button__light-mode"}`}
+                                // onClick={notify}
+                                type='submit'
+                                value="Send"
+                                >
+                            {t("contact.container.button")}
                             <svg
                                 width={24}
                                 height={24}

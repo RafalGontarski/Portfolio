@@ -1,0 +1,210 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "home": {
+    "subtitle": "Junior Full-Stack Developer",
+    "description": "Java&React Full-Stack Developer programmer based in Warsaw and I'm passionate and ambitious to my work.",
+    "button": "Hello",
+    "scroll": "Scroll Down"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "My introduction",
+    "content": {
+      "experience": {
+        "title": "Experience",
+        "subtitle": "1 Year"
+      },
+      "completed": {
+        "title": "Completed",
+        "subtitle": "10+ projects"
+      },
+      "support": {
+        "title": "Support",
+        "subtitle": "Individual"
+      }
+    },
+    "description": "Full-stack developer, I create backend with databases and frontend apps. I am always looking for the latest and well works solutions.",
+    "button": "My CV"
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "My technical level",
+    "content": {
+      "frontend": {
+        "title": "Frontend Developer"
+      },
+      "backend": {
+        "title": "Backend Developer"
+      },
+      "other": {
+        "title": "Other"
+      }
+    },
+    "level": {
+      "preBasic": "Basic",
+      "basic": "Basic",
+      "preIntermediate": "Pre-Intermediate",
+      "intermediate": "Intermediate",
+      "preAdvanced": "Pre-Advanced",
+      "advanced": "Advanced"
+    }
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "My Offer",
+    "content": {
+      "frontend": {
+        "title1": "Backend",
+        "title2": "Developer"
+      },
+      "backend": {
+        "title1": "Backend",
+        "title2": "Developer"
+      },
+      "database": {
+        "title1": "Database",
+        "title2": "Developer"
+      }
+    },
+    "button": "View More",
+    "modal": {
+      "frontend": {
+        "title": "Frontend Developer",
+        "subtitle": "An enthusiastic beginner frontend developer with a strong passion for web technologies. I possess a solid foundation in JavaScript, HTML, CSS, and experience with the React.js library.",
+        "1": "I build responsive user interfaces in line with project guidelines.",
+        "2": "I ensure proper functioning of the application across different browsers and devices.",
+        "3": "I collaborate with the backend team to ensure a consistent and effective application performance.",
+        "4": "I use code quality control tools such as linters and code formatters.",
+        "5": "I continually develop my skills and learn new frontend technologies."
+      },
+      "backend": {
+        "title": "Backend Developer",
+        "subtitle": "A committed Junior Backend Developer with a basic knowledge of Java, Node.js, and SQL. Eager to learn and develop to deliver reliable and efficient backend services.",
+        "1": "I design and implement simple backend services according to business requirements.",
+        "2": "I work with databases, creating and optimizing queries.",
+        "3": "I ensure the proper functioning of services through testing and debugging.",
+        "4": "I collaborate with the frontend team, providing them with the necessary APIs.",
+        "5": "I am dedicated to continually improving my skills and learning new backend technologies."
+      },
+      "database": {
+        "title": "Database Developer",
+        "subtitle": "A junior database specialist with a passion for optimization and creating effective solutions. I implement modern technologies and best practices to ensure smooth and efficient data management.",
+        "1": "I create databases.",
+        "2": "I create backend applications.",
+        "3": "I create frontend applications.",
+        "4": "I deploy and integrate applications.",
+        "5": "Basics of database security."
+      }
+    }
+  },
+  "qualification": {
+    "title": "Qualification",
+    "subtitle": "My personal journey",
+    "education": {
+      "title": "Education",
+      "python": {
+        "name": "Python",
+        "place": "CodeCool",
+        "data": "2022.V - 2022.VIII"
+      },
+      "web": {
+        "name": "Web",
+        "place": "CodeCool",
+        "data": "2022.IX - 2022.XII"
+      },
+      "oop": {
+        "name": "OOP - Java",
+        "place": "CodeCool",
+        "data": "2022.XII - 2023.III"
+      },
+      "react": {
+        "name": "React",
+        "place": "CodeCool",
+        "data": "2023.III - Present"
+      }
+    },
+    "experience": {
+      "title": "Experience",
+      "first": {
+        "name": "Looking for",
+        "place": "CodeCool",
+        "data": "2023.VI - Present"
+      }
+    }
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Most recent works",
+    "workItemTitle": {
+      "all": "All",
+      "web": "Web",
+      "game": "Game"
+    },
+    "workItem": {
+      "button": "Repository"
+    }
+  },
+  "recommendation": {
+    "title": "Recommendation",
+    "subtitle": "Testimonial",
+    "cards": {
+      "card1": {
+        "name": "dr hab. Michał Kruczkowski",
+        "text": "Testimonial text"
+      },
+      "card2": {
+        "name": "dr hab. Michał Kruczkowski",
+        "text": "Testimonial text"
+      },
+      "card3": {
+        "name": "dr hab. Michał Kruczkowski",
+        "text": "Testimonial text"
+      }
+    }
+  },
+  "contact": {
+    "title": "Keep in touch",
+    "subtitle": "Contact me",
+    "container": {
+      "talkToMe": {
+        "title": "Form of contact",
+        "content1": {
+          "button": "Write me"
+        },
+        "content2": {
+          "button": "Call me"
+        },
+        "content3": {
+          "button": "Write me"
+        }
+      },
+      "writeToMe": {
+        "title": "Write me your Project",
+        "contactForm": {
+          "name": "Name",
+          "nameInput": "Insert your name",
+          "mail": "Mail",
+          "mailInput": "Insert your email",
+          "project": "Project",
+          "projectInput": "Write your project"
+        }
+      },
+      "button": "Send Message"
+    },
+    "toast": "Thank's! I'll answer soon."
+  },
+  "footer": {
+    "about": "About",
+    "projects": "Projects",
+    "testimonials": "Testimonials",
+    "text": "All rights reserved. Special thanks for "
+  }
+}
+

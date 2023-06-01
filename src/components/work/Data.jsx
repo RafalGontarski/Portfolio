@@ -179,5 +179,16 @@ export const projectNav = [
     {
         name: 'game',
     },
+]
 
+export const projectNavPl = [
+    {
+        name: 'wszystkie',
+    },
+    {
+        name: 'strony',
+    },
+    {
+        name: 'gry',
+    },
 ]

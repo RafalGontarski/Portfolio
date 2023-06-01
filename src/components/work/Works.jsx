@@ -3,12 +3,15 @@ import {projectsData, projectNav} from "./Data";
 import {WorkItems} from "./WorkItems";
 import './work.css';
 import {DarkModeContext} from "../../context/DarkModeContext";
+import {useTranslation} from "react-i18next";
 
 export const Works = () => {
     const [item, setItem] = useState({name: 'all'});
     const [projects, setProjects] = useState([]);
     const [active, setActive] = useState(0);
     const { isDarkMode} = useContext(DarkModeContext);
+    const [t] = useTranslation("global");
+    const workItems = ["all", "web", "game"];
 
     useEffect(() => {
         if (item.name === 'all') {
@@ -40,6 +43,7 @@ export const Works = () => {
             work__item ${isDarkMode ? 'work__item-dark-mode' : 'work__item-light-mode'}`}
                             key={index}>
                             {item.name}
+                            {/*{t(`portfolio.${item}`)}*/}
                         </span>
                     )
                 })}

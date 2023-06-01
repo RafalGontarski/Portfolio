@@ -29,7 +29,6 @@ function App() {
           <Work/>
           <Testimonials/>
           <Contact/>
-
       </main>
         <Footer/>
         <ScrollUp/>

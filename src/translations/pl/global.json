@@ -1,0 +1,209 @@
+{
+  "header": {
+    "home": "Dom",
+    "about": "O mnie",
+    "skills": "Umiejętności",
+    "services": "Usługi",
+    "portfolio": "Portfolio",
+    "contact": "Kontakt"
+  },
+  "home": {
+    "subtitle": "Młodszy Full Stack Deweloper",
+    "description": "Programista Java&React Full-Stack mieszkający w Warszawie. Do swojej pracy podchodzę z pasją i ambicją.",
+    "button": "Cześć",
+    "scroll": "Przewiń w dół"
+  },
+  "about": {
+    "title": "O Mnie",
+    "subtitle": "Moje wprowadzenie",
+    "content": {
+      "experience": {
+        "title": "Doświadczenie",
+        "subtitle": "1 Rok"
+      },
+      "completed": {
+        "title": "Ukończone",
+        "subtitle": "10+ projektów"
+      },
+      "support": {
+        "title": "Wsparcie",
+        "subtitle": "Indywidualne"
+      }
+    },
+    "description": "Programista full-stack, tworzę backend z obsługą bazy danych i aplikacjami frontendowymi. Zawsze szukam najnowszych i dobrze działających rozwiązań.",
+    "button": "Moje CV"
+  },
+  "skills": {
+    "title": "Umiejętności",
+    "subtitle": "Mój poziom techniczny",
+    "content": {
+      "frontend": {
+        "title": "Programista Frontend"
+      },
+      "backend": {
+        "title": "Programista Backend"
+      },
+      "other": {
+        "title": "Inne"
+      }
+    },
+    "level": {
+      "preBasic": "Podstawowy A1",
+      "basic": "Podstawowy A2",
+      "preIntermediate": "Średni B1",
+      "intermediate": "Średni B2",
+      "preAdvanced": "Średniozaawansowany C1",
+      "advanced": "Zaawansowany C2"
+    }
+  },
+  "services": {
+    "title": "Usługi",
+    "subtitle": "Moja Oferta",
+    "content": {
+      "frontend": {
+        "title1": "Frontend",
+        "title2": "Deweloper"
+      },
+      "backend": {
+        "title1": "Backend",
+        "title2": "Deweloper"
+      },
+      "database": {
+        "title1": "Deweloper",
+        "title2": "Baz danych"
+      }
+    },
+    "button": "Zobacz więcej",
+    "modal": {
+      "frontend": {
+        "title": "Frontend Deweloper",
+        "subtitle": "Początkujący deweloper frontendowy z silną pasją do technologii webowych. Posiadam solidne podstawy w JavaScript, HTML, CSS oraz doświadczenie z biblioteką React.js.",
+        "1": "Buduję responsywne interfejsy użytkownika zgodne z wytycznymi projektu.",
+        "2": "Zapewniam poprawne działanie aplikacji na różnych przeglądarkach i urządzeniach.",
+        "3": "Współpracuję z zespołem backendowym, aby zapewnić spójne i efektywne działanie aplikacji.",
+        "4": "Wykorzystuję narzędzia do kontroli jakości kodu, takie jak linter i formater kodu.",
+        "5": "Ciągle rozwijam swoje umiejętności i poznaję nowe technologie frontendowe."
+      },
+      "backend": {
+        "title": "Backend Deweloper",
+        "subtitle": "Zaangażowany Junior Backend Developer z podstawową znajomością Java, Node.js i SQL. Chętny do nauki i rozwoju, aby dostarczać niezawodne i wydajne serwisy.",
+        "1": "Projektuję i implementuję proste serwisy backendowe zgodnie z wymaganiami biznesowymi.",
+        "2": "Pracuję z bazami danych, tworząc i optymalizując zapytania.",
+        "3": "Zapewniam prawidłowe działanie serwisów poprzez testowanie i debugowanie.",
+        "4": "Współpracuję z zespołem frontendowym, dostarczając potrzebne im API.",
+        "5": "Dbam o ciągłe rozwijanie swoich umiejętności i poznawanie nowych technologii backendowych."
+      },
+      "database": {
+        "title": "Deweloper Baz danych",
+        "subtitle": "Młodszy specjalista od baz danych z pasją do optymalizacji i tworzenia skutecznych rozwiązań. Wdrażam nowoczesne technologie i najlepsze praktyki, aby zapewnić bezproblemowe i efektywne zarządzanie danymi.",
+        "1": "Tworzę bazę danych.",
+        "2": "Tworzę aplikację backendową.",
+        "3": "Tworzę aplikację frontendową.",
+        "4": "Wdrażam i łączę aplikacje.",
+        "5": "Podstawy bezpieczeństwa bazy danych."
+      }
+    }
+  },
+  "qualification": {
+    "title": "Kwalifikacje",
+    "subtitle": "Moja kariera",
+    "education": {
+      "title": "Edukacja",
+      "python": {
+        "name": "Python",
+        "place": "CodeCool",
+        "data": "2022.V - 2022.VIII"
+      },
+      "web": {
+        "name": "Web",
+        "place": "CodeCool",
+        "data": "2022.IX - 2022.XII"
+      },
+      "oop": {
+        "name": "OOP - Java",
+        "place": "CodeCool",
+        "data": "2022.XII - 2023.III"
+      },
+      "react": {
+        "name": "React",
+        "place": "CodeCool",
+        "data": "2023.III - Obecnie"
+      }
+    },
+    "experience": {
+      "title": "Doświadczenie",
+      "first": {
+        "name": "Poszukuję",
+        "place": "CodeCool",
+        "data": "2023.VI - Obecnie"
+      }
+    }
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Najnowsze prace",
+    "workItemTitle": {
+      "all": "Wszystkie",
+      "web": "Aplikacje internetowe",
+      "game": "Gry"
+    },
+    "workItem": {
+      "button": "Repozytorium"
+    }
+  },
+  "recommendation": {
+    "title": "Rekomendacje",
+    "subtitle": "Zaświadczenie",
+    "cards": {
+      "card1": {
+        "name": "dr hab. Michał Kruczkowski",
+        "text": "Komentarz zaświadczenia"
+      },
+      "card2": {
+        "name": "dr hab. Michał Kruczkowski",
+        "text": "Komentarz zaświadczenia"
+      },
+      "card3": {
+        "name": "dr hab. Michał Kruczkowski",
+        "text": "Komentarz zaświadczenia"
+      }
+    }
+  },
+  "contact": {
+    "title": "Pozostańmy w kontakcie",
+    "subtitle": "Skontaktuj się ze mną",
+    "container": {
+      "talkToMe": {
+        "title": "Forma kontaktu",
+        "content1": {
+          "button": "Napisz email"
+        },
+        "content2": {
+          "button": "Napisz SMS"
+        },
+        "content3": {
+          "button": "Napisz na DC"
+        }
+      },
+      "writeToMe": {
+        "title": "Napisz mi swój projekt",
+        "contactForm": {
+          "name": "Imię",
+          "nameInput": "Wpisz swoje imię",
+          "mail": "Mail",
+          "mailInput": "Wpisz swój adres e-mail",
+          "project": "Projekt",
+          "projectInput": "Opis projektu"
+        }
+      },
+      "button": "Wyślij Wiadomość"
+    },
+    "toast": "Dzięki! Niedługo odpowiem."
+  },
+  "footer": {
+    "about": "O Mnie",
+    "projects": "Projekty",
+    "testimonials": "Zaświadczenia",
+    "text": "Wszelkie prawa zastrzeżone. Specjalne podziękowania dla "
+  }
+}
