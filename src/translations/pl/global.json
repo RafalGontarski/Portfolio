@@ -143,9 +143,18 @@
     "title": "Portfolio",
     "subtitle": "Najnowsze prace",
     "workItemTitle": {
-      "all": "Wszystkie",
-      "web": "Aplikacje internetowe",
-      "game": "Gry"
+      "item1": {
+        "id": 1,
+        "title": "Wszystkie"
+      },
+      "item2": {
+        "id": 2,
+        "title": "Strony"
+      },
+      "item3": {
+        "id": 3,
+        "title": "Gry"
+      }
     },
     "workItem": {
       "button": "Repozytorium"
@@ -154,18 +163,24 @@
   "recommendation": {
     "title": "Rekomendacje",
     "subtitle": "Zaświadczenie",
-    "cards": {
+    "data": {
       "card1": {
+        "id": 1,
+        "image": "",
         "name": "dr hab. Michał Kruczkowski",
-        "text": "Komentarz zaświadczenia"
+        "text": "Rafał jest osobą skoncentrowaną na rozwiązaniach, która ma umiejętność zmiany perspektywy trudnych sytuacji. Dzięki swojemu pozytywnemu nastawieniu może motywować kolegów z drużyny, a jednocześnie wkłada dodatkowy wysiłek w osiągnięcie wspólnego celu."
       },
       "card2": {
+        "id": 2,
+        "image": "",
         "name": "dr hab. Michał Kruczkowski",
-        "text": "Komentarz zaświadczenia"
+        "text": "Jakiś opis"
       },
       "card3": {
+        "id": 3,
+        "image": "",
         "name": "dr hab. Michał Kruczkowski",
-        "text": "Komentarz zaświadczenia"
+        "text": "opis"
       }
     }
   },

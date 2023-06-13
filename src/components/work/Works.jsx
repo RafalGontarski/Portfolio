@@ -1,5 +1,5 @@
 import React, {useContext, useEffect, useState} from "react";
-import {projectsData, projectNav} from "./Data";
+import {projectsData, projectNav, translationMapping} from "./Data";
 import {WorkItems} from "./WorkItems";
 import './work.css';
 import {DarkModeContext} from "../../context/DarkModeContext";
@@ -11,7 +11,7 @@ export const Works = () => {
     const [active, setActive] = useState(0);
     const { isDarkMode} = useContext(DarkModeContext);
     const [t] = useTranslation("global");
-    const workItems = ["all", "web", "game"];
+    // const workItems = ["all", "web", "game"];
 
     useEffect(() => {
         if (item.name === 'all') {
@@ -26,7 +26,7 @@ export const Works = () => {
     }, [item]);
 
     const handleClick = (e, index) => {
-        setItem({ name: e.target.textContent.toLowerCase() });
+        setItem({ name: translationMapping[e.target.textContent.toLowerCase()] });
         setActive(index);
     }
 
@@ -34,6 +34,7 @@ export const Works = () => {
         <div>
             <div className='work__filters'>
                 {projectNav.map((item, index) => {
+                    const textKey = `portfolio.workItemTitle.item${item.id}.title`;
                     return (
                         <span
                             onClick={(e) => {
@@ -42,8 +43,8 @@ export const Works = () => {
                             className={` ${active === index ? 'active-work-dark-mode' : ''} 
             work__item ${isDarkMode ? 'work__item-dark-mode' : 'work__item-light-mode'}`}
                             key={index}>
-                            {item.name}
-                            {/*{t(`portfolio.${item}`)}*/}
+                            {/*{item.name}*/}
+                            {t(textKey)}
                         </span>
                     )
                 })}

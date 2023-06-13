@@ -49,6 +49,7 @@ export const Testimonials = () => {
                     modules={[Pagination]}
             >
                 {Data.map(({id, image, title, description}) => {
+                    const textKey = `recommendation.data.card${id}.text`;
                     return (
                         <SwiperSlide className={`testimonial__card ${isDarkMode ?
                             "testimonial__card-dark-mode" :
@@ -61,7 +62,7 @@ export const Testimonials = () => {
                                 ""}`}>{title}</h3>
                             <p className={`testimonial__description ${isDarkMode ?
                                 "testimonial__description-dark-mode" :
-                                ""}`}>{description}</p>
+                                ""}`}>{t(textKey)}</p>
                         </SwiperSlide>
                     )
                 })}

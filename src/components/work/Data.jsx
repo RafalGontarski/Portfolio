@@ -171,12 +171,15 @@ export const projectsData = [
 
 export const projectNav = [
     {
+        id: 1,
         name: 'all',
     },
     {
+        id: 2,
         name: 'web',
     },
     {
+        id: 3,
         name: 'game',
     },
 ]
@@ -192,3 +195,12 @@ export const projectNavPl = [
         name: 'gry',
     },
 ]
+
+export const translationMapping = {
+    all: 'all',
+    web: 'web',
+    game: 'game',
+    wszystkie: 'all',
+    strony: 'web',
+    gry: 'game'
+};
