@@ -1,7 +1,7 @@
 import React, {useContext} from 'react';
 import './about.css';
 import AboutImg from '../../assets/img/about.jpeg';
-import CV from '../../assets/Rafał Gontarski.pdf'
+import CV from '../../assets/rafał_gontarski__FULLSTACK-12M-DAYTIME (2).pdf'
 import {Info} from "./Info";
 import { UilFileDownload } from '@iconscout/react-unicons'
 import {DarkModeContext} from "../../context/DarkModeContext";

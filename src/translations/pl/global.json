@@ -96,11 +96,11 @@
       "database": {
         "title": "Deweloper Baz danych",
         "subtitle": "Młodszy specjalista od baz danych z pasją do optymalizacji i tworzenia skutecznych rozwiązań. Wdrażam nowoczesne technologie i najlepsze praktyki, aby zapewnić bezproblemowe i efektywne zarządzanie danymi.",
-        "1": "Tworzę bazę danych.",
-        "2": "Tworzę aplikację backendową.",
-        "3": "Tworzę aplikację frontendową.",
-        "4": "Wdrażam i łączę aplikacje.",
-        "5": "Podstawy bezpieczeństwa bazy danych."
+        "1": "Znajomość projektowania i implementacji baz danych zgodnie z wymaganiami biznesowymi.",
+        "2": "Zapytania SQL: Doświadczenie w tworzeniu i optymalizacji zapytań SQL dla szybkiego i efektywnego dostarczania danych.",
+        "3": "Testowanie i Debugowanie: Umiejętność zapewniania niezawodności i bezpieczeństwa baz danych poprzez testowanie i debugowanie.",
+        "4": "Współpraca z zespołami: Sprawnie współpracuję z programistami, dostarczając im potrzebne dane w optymalizowanej formie.",
+        "5": "Samorozwój: Ciągłe rozwijanie umiejętności i poznawanie nowych technologii bazodanowych."
       }
     }
   },
@@ -154,6 +154,14 @@
       "item3": {
         "id": 3,
         "title": "Gry"
+      },
+      "item4": {
+        "id": 4,
+        "title": "Frontend"
+      },
+      "item5": {
+        "id": 5,
+        "title": "backend"
       }
     },
     "workItem": {

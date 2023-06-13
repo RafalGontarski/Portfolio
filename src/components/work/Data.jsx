@@ -182,25 +182,24 @@ export const projectNav = [
         id: 3,
         name: 'game',
     },
-]
-
-export const projectNavPl = [
-    {
-        name: 'wszystkie',
-    },
-    {
-        name: 'strony',
-    },
-    {
-        name: 'gry',
-    },
+    // {
+    //     id: 4,
+    //     name: 'frontend',
+    // },
+    // {
+    //     id: 5,
+    //     name: 'backend',
+    // },
 ]
 
 export const translationMapping = {
     all: 'all',
     web: 'web',
     game: 'game',
+    frontend: 'frontend',
+    backend: "backend",
+    fullStack: "fullStack",
     wszystkie: 'all',
     strony: 'web',
-    gry: 'game'
+    gry: 'game',
 };

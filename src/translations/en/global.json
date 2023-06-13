@@ -96,11 +96,11 @@
       "database": {
         "title": "Database Developer",
         "subtitle": "A junior database specialist with a passion for optimization and creating effective solutions. I implement modern technologies and best practices to ensure smooth and efficient data management.",
-        "1": "I create databases.",
-        "2": "I create backend applications.",
-        "3": "I create frontend applications.",
-        "4": "I deploy and integrate applications.",
-        "5": "Basics of database security."
+        "1": "Familiarity with designing and implementing databases in line with business requirements.",
+        "2": "SQL Queries: Experience in creating and optimizing SQL queries for fast and efficient data delivery.",
+        "3": "Testing and Debugging: Ability to ensure the reliability and security of databases through testing and debugging.",
+        "4": "Collaboration with Teams: Effectively collaborate with developers, providing them with needed data in an optimized form.",
+        "5": "Self-Development: Continually improving skills and learning new database technologies."
       }
     }
   },
@@ -154,6 +154,14 @@
       "item3": {
         "id": 3,
         "title": "Game"
+      },
+      "item4": {
+        "id": 4,
+        "title": "Frontend"
+      },
+      "item5": {
+        "id": 5,
+        "title": "Backend"
       }
     },
     "workItem": {
