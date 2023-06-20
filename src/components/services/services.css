@@ -38,9 +38,7 @@
 }
 
 .uil-database-dark-mode {
-    background: linear-gradient(to right, var(--purple-color), var(--violet-color-second-background));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--violet-color-first-background);
     transition: 2s;
 }
 
@@ -244,12 +242,16 @@
 }
 
 .services__modal-icon-light-mode {
-    color: var(--title-color);
+    background: linear-gradient(to right, var(--purple-color), var(--violet-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     transition: 2s;
 }
 
 .uil-check-circle-dark-mode {
-    color: var(--violet-color-third-background);
+    background: linear-gradient(to right, var(--purple-color-first), var(--violet-color-second-background));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     transition: 2s;
 }
 

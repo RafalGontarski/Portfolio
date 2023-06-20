@@ -30,7 +30,7 @@
 }
 
 .work__item-dark-mode:hover {
-    background: linear-gradient(to right, var(--purple-color), var(--violet-color-first-background));
+    background: linear-gradient(to right, var(--purple-color), var(--violet-color));
     color: var(--body-color);
 }
 
@@ -156,7 +156,7 @@
 }
 
 .active-work-dark-mode {
-    background: linear-gradient(to right, var(--purple-color), var(--violet-color-first-background));
+    background: linear-gradient(to right, var(--purple-color), var(--violet-color));
     color: var(--container-color);
 }
 
