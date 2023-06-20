@@ -28,14 +28,14 @@
 }
 
 .uil-database-light-mode {
+    color: var(--violet-color);
     transition: 2s;
 }
-.services__icon-light-mode {
-    background: linear-gradient(to right, var(--purple-color), var(--violet-color-second-background));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: 2s;
-}
+/*.services__icon-light-mode {*/
+/*    background: linear-gradient(to right, var(--purple-color), var(--violet-color-second-background));*/
+
+/*    transition: 2s;*/
+/*}*/
 
 .uil-database-dark-mode {
     color: var(--violet-color-first-background);
@@ -43,6 +43,7 @@
 }
 
 .uil-server-light-mode {
+    color: var(--violet-color);
     transition: 2s;
 }
 
@@ -52,6 +53,7 @@
 }
 
 .uil-web-grid-light-mode {
+    color: var(--violet-color);
     transition: 2s;
 }
 
@@ -61,7 +63,9 @@
 }
 
 .services__icon-light-mode {
-    color: var(--title-color);
+    /*color: -webkit-linear-gradient(to right, var(--purple-color), var(--violet-color-second-background));*/
+    /*-webkit-background-clip: text;*/
+    /*-webkit-text-fill-color: transparent;*/
     transition: 2s;
 }
 
@@ -207,7 +211,7 @@
 }
 
 .services__modal-description-dark-mode {
-    color: var(--violet-color-second-background);
+    color: var(--title-color-white);
     transition: 2s;
 }
 

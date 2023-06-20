@@ -29,7 +29,6 @@
 .mouse-light-mode {
     border: 2px solid var(--violet-color); /* 3px * (32/90) */
     transition: 2s;
-
 }
 
 .mouse-dark-mode {
