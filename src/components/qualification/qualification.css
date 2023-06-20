@@ -39,11 +39,11 @@
 }
 
 .qualification__active {
-    color: var(--title-color-dark);
+    color: var(--violet-color);
 }
 
 .qualification__active-dark-mode {
-    color: var(--body-color);
+    color: var(--violet-color-second-background);
 }
 
 .qualification__sections {
@@ -91,7 +91,7 @@
 }
 
 .qualification__subtitle-dark-mode {
-    color: var(--title-color-white);
+    color: var(--violet-color-fourth-background);
     transition: 2s;
 }
 
@@ -104,7 +104,7 @@
 }
 
 .qualification__calendar-dark-mode {
-    color: var(--title-color-white);
+    color: var(--violet-color-fourth-background);
     transition: 2s;
 }
 
@@ -116,12 +116,12 @@
 }
 
 .qualification__rounder-light-mode {
-    background-color: var(--text-color);
+    background-color: var(--violet-color);
     transition: 2s;
 }
 
 .qualification__rounder-dark-mode {
-    background-color: var(--container-color);
+    background-color: var(--violet-color-second-background);
     transition: 2s;
 }
 
@@ -134,12 +134,12 @@
 }
 
 .qualification__line-light-mode {
-    background-color: var(--text-color);
+    background-color: var(--violet-color);
     transition: 2s;
 }
 
 .qualification__line-dark-mode {
-    background-color: var(--container-color);
+    background-color: var(--violet-color-second-background);
     transition: 2s;
 }
 

@@ -82,12 +82,12 @@
 }
 
 .nav__logo-dark {
-    color: var(--violet-color);
+    color: var(--title-color);
     transition: 2s;
 }
 
 .nav__logo-light {
-    color: var(--violet-color-second-background);
+    color: var(--body-color);
     transition: 2s;
 }
 
@@ -106,11 +106,11 @@
 }
 
 .nav__link-dark {
-    color: var(--violet-color-first-background);
+    color: var(--text-color);
 }
 
 .nav__link-light {
-    color: var(--violet-color-second-background);
+    color: var(--title-color-white);
 }
 
 
@@ -131,7 +131,7 @@
 }
 
 .nav__link-light:hover {
-    color: var(--violet-color-first-background);
+    color: #fff;
     /*color: var(--title-color-dark);*/
     transition: 2s;
 }

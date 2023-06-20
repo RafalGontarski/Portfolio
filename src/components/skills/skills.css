@@ -82,16 +82,21 @@
 }
 
 .skills__level-dark-mode {
-    color: var(--container-color);
+    color: var(--violet-color-third-background);
     transition: 2s;
 }
 
 .badge-check-light-mode {
+    background: linear-gradient(to right, var(--purple-color), var(--violet-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     transition: 2s;
 }
 
 .badge-check-dark-mode {
-    color: var(--container-color);
+    background: linear-gradient(to right, var(--purple-color), var(--violet-color-second-background));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     transition: 2s;
 }
 

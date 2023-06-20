@@ -39,12 +39,16 @@
 }
 
 .about__icon-light-mode {
-    color: var(--title-color);
+    background: linear-gradient(to right, var(--purple-color), var(--violet-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     transition: 2s;
 }
 
 .about__icon-dark-mode {
-    color: var(--container-color);
+    background: linear-gradient(to right, var(--purple-color-first), var(--violet-color-firstandhalf-background));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     transition: 2s;
 }
 
@@ -71,7 +75,7 @@
 }
 
 .about__subtitle-dark-mode {
-    color: var(--container-color);
+    color: var(--violet-color-third-background);
     transition: 2s;
 }
 
@@ -81,11 +85,12 @@
 }
 
 .about__description-light-mode {
+    color: var(--text-color);
     transition: 2s;
 }
 
 .about__description-dark-mode {
-    color: var(--title-color-white);
+    color: var(--violet-color-third-background);
     transition: 2s;
 }
 

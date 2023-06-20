@@ -9,9 +9,19 @@
   /*Color mode HSL(hue, saturation, lightness)*/
   --hue: 0;
   --sat: 0%;
+  --violet-color-dark: hsl(250, 69%, 54%);
   --violet-color: hsl(250, 69%, 61%);
+  --violet-color-hover: hsl(250, 69%, 67%);
   --violet-color-first-background: hsl(250, 61%, 75%);
+  --violet-color-firstandhalf-background: hsl(250, 61%, 80%);
   --violet-color-second-background: hsl(250, 61%, 85%);
+  --violet-color-third-background: hsl(250, 61%, 90%);
+  --violet-color-fourth-background: hsl(250, 61%, 95%);
+
+  --purple-color: hsl(312, 92%, 38%);
+  --purple-color-first: hsl(312, 92%, 45%);
+  --purple-color-second: hsl(312, 92%, 53%);
+  --purple-color-third: hsl(312, 92%, 60%);
 
 
   --title-color: hsl(var(--hue), var(--sat), 20%);
@@ -149,12 +159,12 @@ img {
 }
 
 .section__subtitle-light-mode {
-  color: var(--title-color);
+  color: var(--text-color);
   transition: 2s;
 }
 
 .section__subtitle-dark-mode {
-  color: var(--container-color);
+  color: var(--violet-color-third-background);
   transition: 2s;
 }
 
@@ -187,21 +197,20 @@ img {
 }
 
 .button__dark-mode {
-  background-color: var(--button-background-color-dark);
+  background: linear-gradient(to right, var(--purple-color), var(--violet-color));
 
 }
 
 .button__light-mode {
-  background-color: var(--title-color);
-
+  background: linear-gradient(to right, var(--purple-color-first), var(--violet-color-first-background));
 }
 
 .button__light-mode:hover {
-  background-color: var(--title-color-dark);
+  background: linear-gradient(to right, var(--purple-color), var(--violet-color));
 }
 
 .button__dark-mode:hover {
-  background-color: var(--button-background-color-dark-hover);
+  background: linear-gradient(to right, var(--purple-color-first), var(--violet-color-first-background));
 
   /*transition: 1s;*/
 }

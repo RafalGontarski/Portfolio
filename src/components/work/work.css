@@ -25,12 +25,12 @@
 
 
 .work__item-light-mode:hover {
-    background-color: var(--text-color);
+    background: linear-gradient(to right, var(--purple-color), var(--violet-color-first-background));
     color: var(--container-color);
 }
 
 .work__item-dark-mode:hover {
-    background-color: var(--text-color);
+    background: linear-gradient(to right, var(--purple-color), var(--violet-color-first-background));
     color: var(--body-color);
 }
 
@@ -152,11 +152,11 @@
 
 /* active work*/
 .active-work-light-mode {
-    background-color: var(--body-color);
+    background: linear-gradient(to right, var(--purple-color), var(--violet-color));
 }
 
 .active-work-dark-mode {
-    background-color: var(--text-color);
+    background: linear-gradient(to right, var(--purple-color), var(--violet-color-first-background));
     color: var(--container-color);
 }
 

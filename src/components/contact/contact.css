@@ -44,12 +44,16 @@
 }
 
 .contact__card-icon-light-mode {
-    color: var(--title-color);
+    background: linear-gradient(to right, var(--purple-color), var(--violet-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     transition: 2s;
 }
 
 .contact__card-icon-dark-mode {
-    color: var(--container-color);
+    background: linear-gradient(to right, var(--purple-color), var(--violet-color-second-background));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     transition: 2s;
 }
 

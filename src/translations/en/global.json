@@ -124,7 +124,7 @@
         "data": "2022.V - 2022.VIII"
       },
       "web": {
-        "name": "Web",
+        "name": "Web - JavaScript, HTML, CSS",
         "place": "CodeCool",
         "data": "2022.IX - 2022.XII"
       },
@@ -239,6 +239,7 @@
     "toast": "Thank's! I'll answer soon."
   },
   "footer": {
+    "title": "Hi, I'm Raphael",
     "about": "About",
     "projects": "Projects",
     "testimonials": "Testimonials",

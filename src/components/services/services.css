@@ -31,12 +31,16 @@
     transition: 2s;
 }
 .services__icon-light-mode {
-    color: var(--title-color);
+    background: linear-gradient(to right, var(--purple-color), var(--violet-color-second-background));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     transition: 2s;
 }
 
 .uil-database-dark-mode {
-    color: var(--container-color);
+    background: linear-gradient(to right, var(--purple-color), var(--violet-color-second-background));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     transition: 2s;
 }
 
@@ -45,7 +49,7 @@
 }
 
 .uil-server-dark-mode {
-    color: var(--container-color);
+    color: var(--violet-color-first-background);
     transition: 2s;
 }
 
@@ -54,7 +58,7 @@
 }
 
 .uil-web-grid-dark-mode {
-    color: var(--container-color);
+    color: var(--violet-color-first-background);
     transition: 2s;
 }
 
@@ -92,7 +96,7 @@
 }
 
 .services__button-dark-mode {
-    color: var(--container-color);
+    color: var(--violet-color-third-background);
     transition: 2s;
 }
 
@@ -110,12 +114,12 @@
 }
 
 .uil-arrow-right-dark-mode {
-    color: var(--container-color);
+    color: var(--violet-color-third-background);
     /*transition: 2s;*/
 }
 
 .services__button-icon-dark-mode{
-    color: var(--container-color);
+    color: var(--violet-color-third-background);
     /*transition: 2s;*/
 }
 
@@ -177,12 +181,12 @@
 }
 
 .uil-times-dark-mode {
-    color: var(--container-color);
+    color: var(--violet-color-third-background);
     transition: 2s;
 }
 
 .services__modal-close-dark-mode {
-    color: var(--container-color);
+    color: var(--violet-color-third-background);
     transition: 2s;
 }
 
@@ -205,7 +209,7 @@
 }
 
 .services__modal-description-dark-mode {
-    color: var(--title-color-white);
+    color: var(--violet-color-second-background);
     transition: 2s;
 }
 
@@ -245,12 +249,12 @@
 }
 
 .uil-check-circle-dark-mode {
-    color: var(--container-color);
+    color: var(--violet-color-third-background);
     transition: 2s;
 }
 
 .services__modal-icon-dark-mode {
-    color: var(--container-color);
+    color: var(--violet-color-third-background);
     transition: 2s;
 }
 

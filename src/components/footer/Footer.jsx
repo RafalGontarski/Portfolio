@@ -10,7 +10,7 @@ export const Footer = () => {
     return (
         <footer className={`footer ${isDarkMode ? "footer__dark-mode" : "footer__light-mode"}`}>
             <div className="footer__container container">
-                <h1 className={`footer__title ${isDarkMode ? "footer__title-dark-mode" : ""}`}>Rafał Gontarski 👋</h1>
+                <h1 className={`footer__title ${isDarkMode ? "footer__title-dark-mode" : ""}`}>{t("footer.title")} 👋</h1>
 
                 <ul className="footer__list">
                     <li>

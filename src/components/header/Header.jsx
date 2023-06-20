@@ -4,6 +4,7 @@ import {DarkModeContext} from "../../context/DarkModeContext";
 import { Icon } from '@iconify/react';
 import {LanguageContext} from "../../context/LanguageContext";
 import {useTranslation} from "react-i18next";
+import ProfileLogo from '../../assets/img/profile-removebg-preview.png';
 
 export const Header = () => {
     /* ================ Change Background Header =================*/
@@ -34,7 +35,10 @@ export const Header = () => {
 
             <nav className='nav container'>
 
-                <a href='index.html' className={`nav__logo nav__logo-dark ${isDarkMode ? "nav__logo-light" : ""}`}>{t("header.logo")}</a>
+                <a href='index.html' className={`nav__logo nav__logo-dark ${isDarkMode ? "nav__logo-light" : ""}`}>
+                    {/*<img src={ProfileLogo} alt='' style={{width: 30,}}/>*/}
+                    {t("header.logo")}
+                </a>
 
 
                 <div className={Toggle ? `nav__menu show-menu ${isDarkMode ? "nav__menu-dark-mode" : "nav__menu-light-mode"}` : 'nav__menu'}>

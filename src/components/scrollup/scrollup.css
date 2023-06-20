@@ -11,10 +11,11 @@
 }
 
 .scrollup-light-mode {
-    background-color: var(--title-color);
+    background: linear-gradient(to right, var(--purple-color), var(--violet-color));
 }
 .scrollup-dark-mode {
-    background-color: var(--button-background-color-dark);
+    background: linear-gradient(to right, var(--purple-color), var(--violet-color-first-background));
+    transition: 2s;
 }
 
 .scrollup__icon {
@@ -27,7 +28,8 @@
 }
 
 .scrollup-dark-mode:hover {
-    background-color: var(--button-background-color-dark-hover);
+    background: linear-gradient(to right, var(--purple-color), var(--violet-color-second-background));
+    transition: 2s;
 }
 
 /* Show Scroll */
