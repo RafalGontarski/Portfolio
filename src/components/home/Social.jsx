@@ -10,14 +10,15 @@ export const Social = () => {
                className={`home__social-icon
                ${isDarkMode ? "home__social-icon-dark-mode" : "home__social-icon-light-mode"}`}
                target='_blank'>
-                <i className="uil uil-linkedin"></i>
+                <i className="uil uil-linkedin" style={{fontSize: 16}}> Linked In
+                </i>
             </a>
 
             <a href="https://github.com/RafalGontarski"
                className={`home__social-icon
                ${isDarkMode ? "home__social-icon-dark-mode" : "home__social-icon-light-mode"}`}
                target='_blank'>
-                <i className="uil uil-github-alt"></i>
+                <i className="uil uil-github-alt" style={{fontSize: 16}}> Git Hub</i>
             </a>
         </div>
     )

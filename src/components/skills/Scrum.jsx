@@ -15,7 +15,7 @@ export const Scrum = () => {
                         <i className={`bx bxs-badge-check ${isDarkMode ? "badge-check-dark-mode" : "badge-check-light-mode"}`}></i>
 
                         <div>
-                            <h3 className={`skills__name ${isDarkMode ? "skills__name-dark-mode" : "skills__name-light-mode"}`}>Jira</h3>
+                            <h3 className={`skills__name ${isDarkMode ? "skills__name-dark-mode" : "skills__name-light-mode"}`}>Jira, Trello</h3>
                             <span className={`skills__level ${isDarkMode ? "skills__level-dark-mode" : "skills__level-light-mode"}`}>{t("skills.level.intermediate")}</span>
                         </div>
                     </div>
@@ -24,16 +24,7 @@ export const Scrum = () => {
                         <i className={`bx bxs-badge-check ${isDarkMode ? "badge-check-dark-mode" : "badge-check-light-mode"}`}></i>
 
                         <div>
-                            <h3 className={`skills__name ${isDarkMode ? "skills__name-dark-mode" : "skills__name-light-mode"}`}>Grooming</h3>
-                            <span className={`skills__level ${isDarkMode ? "skills__level-dark-mode" : "skills__level-light-mode"}`}>{t("skills.level.basic")}</span>
-                        </div>
-                    </div>
-
-                    <div className="skills__data">
-                        <i className={`bx bxs-badge-check ${isDarkMode ? "badge-check-dark-mode" : "badge-check-light-mode"}`}></i>
-
-                        <div>
-                            <h3 className={`skills__name ${isDarkMode ? "skills__name-dark-mode" : "skills__name-light-mode"}`}>Git</h3>
+                            <h3 className={`skills__name ${isDarkMode ? "skills__name-dark-mode" : "skills__name-light-mode"}`}>Docker, Netlify</h3>
                             <span className={`skills__level ${isDarkMode ? "skills__level-dark-mode" : "skills__level-light-mode"}`}>{t("skills.level.basic")}</span>
                         </div>
                     </div>
@@ -43,6 +34,15 @@ export const Scrum = () => {
 
                         <div>
                             <h3 className={`skills__name ${isDarkMode ? "skills__name-dark-mode" : "skills__name-light-mode"}`}>DevOps</h3>
+                            <span className={`skills__level ${isDarkMode ? "skills__level-dark-mode" : "skills__level-light-mode"}`}>{t("skills.level.preIntermediate")}</span>
+                        </div>
+                    </div>
+
+                    <div className="skills__data">
+                        <i className={`bx bxs-badge-check ${isDarkMode ? "badge-check-dark-mode" : "badge-check-light-mode"}`}></i>
+
+                        <div>
+                            <h3 className={`skills__name ${isDarkMode ? "skills__name-dark-mode" : "skills__name-light-mode"}`}>Chat GPT 4</h3>
                             <span className={`skills__level ${isDarkMode ? "skills__level-dark-mode" : "skills__level-light-mode"}`}>{t("skills.level.preBasic")}</span>
                         </div>
                     </div>
@@ -54,7 +54,7 @@ export const Scrum = () => {
                         <i className={`bx bxs-badge-check ${isDarkMode ? "badge-check-dark-mode" : "badge-check-light-mode"}`}></i>
 
                         <div>
-                            <h3 className={`skills__name ${isDarkMode ? "skills__name-dark-mode" : "skills__name-light-mode"}`}>Scrum</h3>
+                            <h3 className={`skills__name ${isDarkMode ? "skills__name-dark-mode" : "skills__name-light-mode"}`}>Scrum, Grooming</h3>
                             <span className={`skills__level ${isDarkMode ? "skills__level-dark-mode" : "skills__level-light-mode"}`}>{t("skills.level.basic")}</span>
                         </div>
                     </div>
@@ -63,7 +63,7 @@ export const Scrum = () => {
                         <i className={`bx bxs-badge-check ${isDarkMode ? "badge-check-dark-mode" : "badge-check-light-mode"}`}></i>
 
                         <div>
-                            <h3 className={`skills__name ${isDarkMode ? "skills__name-dark-mode" : "skills__name-light-mode"}`}>Docker</h3>
+                            <h3 className={`skills__name ${isDarkMode ? "skills__name-dark-mode" : "skills__name-light-mode"}`}>Git, GitHub</h3>
                             <span className={`skills__level ${isDarkMode ? "skills__level-dark-mode" : "skills__level-light-mode"}`}>{t("skills.level.basic")}</span>
                         </div>
                     </div>

@@ -16,7 +16,7 @@ export const Frontend = () => {
                         <i className={`bx bxs-badge-check ${isDarkMode ? "badge-check-dark-mode" : "badge-check-light-mode"}`}></i>
 
                         <div>
-                            <h3 className={`skills__name ${isDarkMode ? "skills__name-dark-mode" : "skills__name-light-mode"}`}>JavaScript</h3>
+                            <h3 className={`skills__name ${isDarkMode ? "skills__name-dark-mode" : "skills__name-light-mode"}`}>React</h3>
                             <span className={`skills__level ${isDarkMode ? "skills__level-dark-mode" : "skills__level-light-mode"}`}>{t("skills.level.intermediate")}</span>
                         </div>
                     </div>
@@ -56,8 +56,8 @@ export const Frontend = () => {
                         <i className={`bx bxs-badge-check ${isDarkMode ? "badge-check-dark-mode" : "badge-check-light-mode"}`}></i>
 
                         <div>
-                            <h3 className={`skills__name ${isDarkMode ? "skills__name-dark-mode" : "skills__name-light-mode"}`}>TypeScript</h3>
-                            <span className={`skills__level ${isDarkMode ? "skills__level-dark-mode" : "skills__level-light-mode"}`}>{t("skills.level.intermediate")}</span>
+                            <h3 className={`skills__name ${isDarkMode ? "skills__name-dark-mode" : "skills__name-light-mode"}`}>JavaScript, TypeScript</h3>
+                            <span className={`skills__level ${isDarkMode ? "skills__level-dark-mode" : "skills__level-light-mode"}`}>{t("skills.level.preIntermediate")}</span>
                         </div>
                     </div>
 
@@ -74,7 +74,7 @@ export const Frontend = () => {
                         <i className={`bx bxs-badge-check ${isDarkMode ? "badge-check-dark-mode" : "badge-check-light-mode"}`}></i>
 
                         <div>
-                            <h3 className={`skills__name ${isDarkMode ? "skills__name-dark-mode" : "skills__name-light-mode"}`}>Bootstrap</h3>
+                            <h3 className={`skills__name ${isDarkMode ? "skills__name-dark-mode" : "skills__name-light-mode"}`}>{t("skills.content.frontend.libraries")}</h3>
                             <span className={`skills__level ${isDarkMode ? "skills__level-dark-mode" : "skills__level-light-mode"}`}>{t("skills.level.intermediate")}</span>
                         </div>
                     </div>

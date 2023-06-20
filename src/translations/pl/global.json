@@ -1,6 +1,7 @@
 {
   "header": {
-    "home": "Dom",
+    "logo": "Rafał",
+    "home": "Strona główna",
     "about": "O mnie",
     "skills": "Umiejętności",
     "services": "Usługi",
@@ -8,9 +9,12 @@
     "contact": "Kontakt"
   },
   "home": {
+    "title": "Cześć, jestem Rafał",
     "subtitle": "Młodszy Full Stack Deweloper",
     "description": "Programista Java&React Full-Stack mieszkający w Warszawie. Do swojej pracy podchodzę z pasją i ambicją.",
     "button": "Cześć",
+    "linkedIn": "Mój Linked In",
+    "gitHub": "Moje Repo",
     "scroll": "Przewiń w dół"
   },
   "about": {
@@ -38,22 +42,27 @@
     "subtitle": "Mój poziom techniczny",
     "content": {
       "frontend": {
-        "title": "Programista Frontend"
+        "title": "Frontend",
+        "libraries": "Biblioteki"
       },
       "backend": {
-        "title": "Programista Backend"
+        "title": "Backend",
+        "designPatterns": "Wzorce Projektowe"
+      },
+      "database": {
+        "title": "Baza Danych"
       },
       "other": {
         "title": "Inne"
       }
     },
     "level": {
-      "preBasic": "Podstawowy A1",
-      "basic": "Podstawowy A2",
-      "preIntermediate": "Średni B1",
-      "intermediate": "Średni B2",
-      "preAdvanced": "Średniozaawansowany C1",
-      "advanced": "Zaawansowany C2"
+      "preBasic": "Basic",
+      "basic": "Basic",
+      "preIntermediate": "Pre-Intermediate",
+      "intermediate": "Intermediate",
+      "preAdvanced": "Pre-Advanced",
+      "advanced": "Advanced"
     }
   },
   "services": {
@@ -206,6 +215,12 @@
         },
         "content3": {
           "button": "Napisz na DC"
+        },
+        "content4": {
+          "button": "Mój Linked In"
+        },
+        "content5": {
+          "button": "Moje Repozytorium"
         }
       },
       "writeToMe": {

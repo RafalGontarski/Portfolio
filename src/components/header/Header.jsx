@@ -34,7 +34,7 @@ export const Header = () => {
 
             <nav className='nav container'>
 
-                <a href='index.html' className={`nav__logo nav__logo-dark ${isDarkMode ? "nav__logo-light" : ""}`}>Rafał Gontarski</a>
+                <a href='index.html' className={`nav__logo nav__logo-dark ${isDarkMode ? "nav__logo-light" : ""}`}>{t("header.logo")}</a>
 
 
                 <div className={Toggle ? `nav__menu show-menu ${isDarkMode ? "nav__menu-dark-mode" : "nav__menu-light-mode"}` : 'nav__menu'}>
@@ -44,8 +44,8 @@ export const Header = () => {
                                onClick={() => setActiveNav(('#home'))}
                                className={`${activeNav === '#home' ?
                                    'nav__link ' :
-                                   'nav__link'} ${isDarkMode ?
-                                   'nav__link-light active-link-light' : 'nav__link-dark active-link-dark'}`}>
+                                   'nav__link nav__link-dark'} ${isDarkMode ?
+                                   'nav__link-light' : 'nav__link-dark'}`}>
                                 <i className="uil uil-estate nav__icon"></i> {t("header.home")}
                             </a>
                         </li>
@@ -55,7 +55,7 @@ export const Header = () => {
                                className={`${activeNav === '#about' ?
                                    'nav__link ' :
                                    'nav__link nav__link-dark'} ${isDarkMode ?
-                                   'nav__link-light active-link-light' : 'nav__link-dark active-link-dark'}`}>
+                                   'nav__link-light' : 'nav__link-dark'}`}>
                                 <i className="uil uil-user nav__icon"></i> {t("header.about")}
                             </a>
                         </li>
@@ -65,7 +65,7 @@ export const Header = () => {
                                className={`${activeNav === '#skills' ?
                                    'nav__link ' :
                                    'nav__link nav__link-dark'} ${isDarkMode ?
-                                   'nav__link-light active-link-light' : 'nav__link-dark active-link-dark'}`}>
+                                   'nav__link-light' : 'nav__link-dark'}`}>
                                 <i className="uil uil-file-alt nav__icon"></i> {t("header.skills")}
                             </a>
                         </li>
@@ -75,7 +75,7 @@ export const Header = () => {
                                className={`${activeNav === '#services' ?
                                    'nav__link ' :
                                    'nav__link nav__link-dark'} ${isDarkMode ?
-                                   'nav__link-light active-link-light' : 'nav__link-dark active-link-dark'}`}>
+                                   'nav__link-light' : 'nav__link-dark'}`}>
                                 <i className="uil uil-briefcase-alt nav__icon"></i> {t("header.services")}
                             </a>
                         </li>
@@ -85,7 +85,7 @@ export const Header = () => {
                                className={`${activeNav === '#portfolio' ?
                                    'nav__link ' :
                                    'nav__link nav__link-dark'} ${isDarkMode ?
-                                   'nav__link-light active-link-light' : 'nav__link-dark active-link-dark'}`}>
+                                   'nav__link-light' : 'nav__link-dark'}`}>
                                 <i className="uil uil-scenery nav__icon"></i> {t("header.portfolio")}
                             </a>
                         </li>
@@ -95,7 +95,7 @@ export const Header = () => {
                                className={`${activeNav === '#contact' ?
                                    'nav__link ' :
                                    'nav__link nav__link-dark'} ${isDarkMode ?
-                                   'nav__link-light active-link-light' : 'nav__link-dark active-link-dark'}`}>
+                                   'nav__link-light' : 'nav__link-dark'}`}>
                                 <i className="uil uil-message nav__icon"></i> {t("header.contact")}
                             </a>
                         </li>
@@ -130,10 +130,10 @@ export const Header = () => {
                         }}
                     />
 
-                    <i className={isDarkMode ?
-                        "uil uil-moon light-mode" : "uil uil-brightness nav__link"}
+                    <a className={isDarkMode ?
+                        "uil uil-brightness light-mode" : "uil uil-moon nav__link"}
                        id='toggleDark'
-                       onClick={toggleDarkMode}></i>
+                       onClick={toggleDarkMode}></a>
 
                 </div>
 

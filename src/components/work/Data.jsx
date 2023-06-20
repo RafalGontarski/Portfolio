@@ -32,7 +32,7 @@ export const projectsData = [
         category: 'web',
         url: 'https://github.com/RafalGontarski/DentFlow-frontend',
         description: 'Dental clinic management app - frontend.',
-        technologies: 'Java, Typescript',
+        technologies: 'Java, TypeScript',
         libraries: 'styled-component, mui, bootstrap, toastfy',
         frameworks: 'React, Spring Boot, Security, Hibernate, RESTApi',
         database: 'PostgreSQL',
@@ -126,7 +126,7 @@ export const projectsData = [
         technologies: 'Java, JavaScript, HTML, CSS',
         libraries: '-',
         frameworks: '-',
-        database: '-',
+        database: 'JDBC',
     },
     {
         id: 9,

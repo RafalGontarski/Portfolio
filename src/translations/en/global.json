@@ -1,5 +1,6 @@
 {
   "header": {
+    "logo": "Raphael",
     "home": "Home",
     "about": "About",
     "skills": "Skills",
@@ -8,9 +9,12 @@
     "contact": "Contact"
   },
   "home": {
+    "title": "Hi, I'm Raphael",
     "subtitle": "Junior Full-Stack Developer",
     "description": "Java&React Full-Stack Developer programmer based in Warsaw and I'm passionate and ambitious to my work.",
     "button": "Hello",
+    "linkedIn": "My Linked In",
+    "gitHub": "My Git Repo",
     "scroll": "Scroll Down"
   },
   "about": {
@@ -38,10 +42,15 @@
     "subtitle": "My technical level",
     "content": {
       "frontend": {
-        "title": "Frontend Developer"
+        "title": "Frontend Developer",
+        "libraries": "Libraries"
       },
       "backend": {
-        "title": "Backend Developer"
+        "title": "Backend Developer",
+        "designPatterns": "Design Patterns"
+      },
+      "database": {
+        "title": "Database Developer"
       },
       "other": {
         "title": "Other"
@@ -61,7 +70,7 @@
     "subtitle": "My Offer",
     "content": {
       "frontend": {
-        "title1": "Backend",
+        "title1": "Frontend",
         "title2": "Developer"
       },
       "backend": {
@@ -206,10 +215,16 @@
         },
         "content3": {
           "button": "Write me"
+        },
+        "content4": {
+          "button": "My Linked In"
+        },
+        "content5": {
+          "button": "My Repository"
         }
       },
       "writeToMe": {
-        "title": "Write me your Project",
+        "title": "Write me your project",
         "contactForm": {
           "name": "Name",
           "nameInput": "Insert your name",

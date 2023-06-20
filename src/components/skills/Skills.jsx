@@ -5,6 +5,7 @@ import {Backend} from "./Backend";
 import {Scrum} from "./Scrum";
 import {DarkModeContext} from "../../context/DarkModeContext";
 import {useTranslation} from "react-i18next";
+import {Database} from "./Database";
 
 export const Skills = () => {
     const { isDarkMode} = useContext(DarkModeContext);
@@ -15,8 +16,9 @@ export const Skills = () => {
             <span className={`section__subtitle ${isDarkMode ? "section__subtitle-dark-mode" : "section__subtitle-light-mode"}`}>{t("skills.subtitle")}</span>
 
             <div className="skills__container grid">
-                <Frontend />
+                {/*<Database />*/}
                 <Backend />
+                <Frontend />
                 <Scrum />
             </div>
         </section>

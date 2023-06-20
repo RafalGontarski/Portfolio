@@ -32,7 +32,7 @@
 }
 
 .mouse-dark-mode {
-    border: 2px solid var(--body-color); /* 3px * (32/90) */
+    border: 2px solid var(--violet-color-first-background); /* 3px * (32/90) */
     transition: 2s;
 }
 
@@ -51,12 +51,13 @@
 }
 
 .mouse-light-mode::before {
-    background-color: #333;
+    /*background-color: #333;*/
+    background-color: var(--violet-color-first-background);
     transition: 2s;
 }
 
 .mouse-dark-mode::before {
-    background-color: var(--body-color);
+    background-color: var(--violet-color-first-background);
     transition: 2s;
 }
 

@@ -15,6 +15,13 @@
     row-gap: 1rem;
 }
 
+.home__buttons {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: row;  /* Domyślnie, ale jasne dla jasności */
+    gap: 0.5rem;
+}
+
 .home__social-icon {
     font-size: 1.25rem;
     color: var(--text-color);
@@ -22,12 +29,12 @@
 }
 
 .home__social-icon-light-mode {
-    color: var(--text-color);
+    color: var(--violet-color-first-background);
     transition: 2s;
 }
 
 .home__social-icon-light-mode:hover {
-    color: var(--title-color-dark);
+    color: var(--violet-color);
     transition: 2s;
 }
 

@@ -82,12 +82,12 @@
 }
 
 .nav__logo-dark {
-    color: var(--title-color);
+    color: var(--violet-color);
     transition: 2s;
 }
 
 .nav__logo-light {
-    color: var(--body-color);
+    color: var(--violet-color-second-background);
     transition: 2s;
 }
 
@@ -106,11 +106,11 @@
 }
 
 .nav__link-dark {
-    color: var(--text-color);
+    color: var(--violet-color-first-background);
 }
 
 .nav__link-light {
-    color: var(--title-color-white);
+    color: var(--violet-color-second-background);
 }
 
 
@@ -125,7 +125,14 @@
     color: var(--text-color);
 }
 .nav__link-dark:hover {
-    color: var(--title-color-dark);
+    color: var(--violet-color);
+    /*color: var(--title-color-dark);*/
+    transition: 2s;
+}
+
+.nav__link-light:hover {
+    color: var(--violet-color-first-background);
+    /*color: var(--title-color-dark);*/
     transition: 2s;
 }
 
@@ -137,7 +144,8 @@
     color: var(--title-color-white);
 }
 .active-link-light:hover {
-    color: #fff;
+    /*color: #fff;*/
+    color: var(--violet-color-first-background);
     transition: 2s;
 }
 

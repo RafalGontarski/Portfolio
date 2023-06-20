@@ -51,7 +51,59 @@ export const Contact = () => {
                         >{t("contact.container.talkToMe.title")}
                     </h3>
 
+
+
                     <div className="contact__info">
+
+                        <div className={`contact__card ${isDarkMode ?
+                            "contact__card-dark-mode" :
+                            "contact__card-light-mode"}`}>
+                            <i className={`bx bxl-linkedin contact__card-icon ${isDarkMode ?
+                                "contact__card-icon-dark-mode" :
+                                "contact__card-icon-light-mode"}`}></i>
+
+                            <h3 className={`contact__card-title ${isDarkMode ?
+                                "contact__card-title-dark-mode" :
+                                ""}`}>Linked In </h3>
+                            <span className={`contact__card-data ${isDarkMode ?
+                                "contact__card-data-dark-mode" :
+                                ""}`}>Rafał Gontarski</span>
+
+                            <a href="https://www.linkedin.com/in/rafa%C5%82-gontarski/"
+                               target='_blank'
+                               className={`contact__button ${isDarkMode ?
+                                   'contact__button-dark-mode' :
+                                   'contact__button-light-mode'}`}
+                            >{t("contact.container.talkToMe.content4.button")}
+                                <i className="bx bx-right-arrow-alt contact__button-icon"></i>
+                            </a>
+                        </div>
+
+                        <div className={`contact__card ${isDarkMode ?
+                            "contact__card-dark-mode" :
+                            "contact__card-light-mode"}`}>
+                            <i className={`bx bxl-github contact__card-icon ${isDarkMode ?
+                                "contact__card-icon-dark-mode" :
+                                "contact__card-icon-light-mode"}`}></i>
+
+                            <h3 className={`contact__card-title ${isDarkMode ?
+                                "contact__card-title-dark-mode" :
+                                ""}`}>Git Hub </h3>
+                            <span className={`contact__card-data ${isDarkMode ?
+                                "contact__card-data-dark-mode" :
+                                ""}`}>RafalGontarski</span>
+
+                            <a href="https://github.com/RafalGontarski"
+                               target='_blank'
+                               className={`contact__button ${isDarkMode ?
+                                   'contact__button-dark-mode' :
+                                   'contact__button-light-mode'}`}
+                            >{t("contact.container.talkToMe.content5.button")}
+                                <i className="bx bx-right-arrow-alt contact__button-icon"></i>
+                            </a>
+
+                        </div>
+
                         <div className={`contact__card ${isDarkMode ? 
                             "contact__card-dark-mode" : 
                             "contact__card-light-mode"}`}>
@@ -89,7 +141,7 @@ export const Contact = () => {
                                 ""}`}>Whatsapp</h3>
                             <span className={`contact__card-data ${isDarkMode ?
                                 "contact__card-data-dark-mode" :
-                                ""}`}>511-670-859</span>
+                                ""}`}>+48 511 670 859</span>
 
                             <a href="https://api.whatsapp.com/send?phone=48511670859&test=Hello, more information!"
                                target='_blank'
@@ -120,7 +172,7 @@ export const Contact = () => {
                             {/*       'contact__button-light-mode'}`}>{t("contact.container.talkToMe.content3.button")}*/}
                             {/*    <i className="bx bx-right-arrow-alt contact__button-icon"></i>*/}
                             {/*</a>*/}
-                            <div><br/></div>
+                            {/*<div><br/></div>*/}
 
                         </div>
                     </div>

@@ -9,6 +9,11 @@
   /*Color mode HSL(hue, saturation, lightness)*/
   --hue: 0;
   --sat: 0%;
+  --violet-color: hsl(250, 69%, 61%);
+  --violet-color-first-background: hsl(250, 61%, 75%);
+  --violet-color-second-background: hsl(250, 61%, 85%);
+
+
   --title-color: hsl(var(--hue), var(--sat), 20%);
   --footer_dark-color: hsl(var(--hue), var(--sat), 15%);
   --title-color-white: hsl(var(--hue), var(--sat), 80%);
