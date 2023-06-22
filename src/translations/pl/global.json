@@ -1,6 +1,6 @@
 {
   "header": {
-    "logo": "Rafał",
+    "logo": "Rafał Gontarski",
     "home": "Strona główna",
     "about": "O mnie",
     "skills": "Umiejętności",
@@ -166,7 +166,7 @@
       },
       "item4": {
         "id": 4,
-        "title": "Frontend"
+        "title": "Mikroserwis"
       },
       "item5": {
         "id": 5,
@@ -190,8 +190,8 @@
       "card2": {
         "id": 2,
         "image": "",
-        "name": "dr hab. Michał Kruczkowski",
-        "text": "Jakiś opis"
+        "name": "Bartosz Mróz",
+        "text": "Jako mentor poznałem Rafała na zajęciach podczas kursu Fullstack Developer. Przede wszystkim jest osobą ambitną, która w trakcie kursu stawiała sobie konkretne cele i bardzo dobrze je realizowała. Bardzo doceniam jego aktywny udział w kursie, pokaźny zasób wiedzy, którą zdobył do tej pory oraz chęć poszerzania tej wiedzy poprzez własną pracę."
       },
       "card3": {
         "id": 3,

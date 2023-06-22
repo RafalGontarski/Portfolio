@@ -1,6 +1,6 @@
 {
   "header": {
-    "logo": "Raphael",
+    "logo": "Raphael Gontarski",
     "home": "Home",
     "about": "About",
     "skills": "Skills",
@@ -166,7 +166,7 @@
       },
       "item4": {
         "id": 4,
-        "title": "Frontend"
+        "title": "Microservice"
       },
       "item5": {
         "id": 5,
@@ -190,8 +190,8 @@
       "card2": {
         "id": 2,
         "image": "",
-        "name": "dr hab. Michał Kruczkowski",
-        "text": "Testimonial text1"
+        "name": "Bartosz Mróz",
+        "text": "As a mentor, I met Rafał on class during the Fullstack Developer course. Above all, he is an ambitious person who set himself specific goals during the course and achieved them very well. I very much appreciate his active participation in the course, the considerable amount of knowledge he has gained so far and his willingness to expand this knowledge through his own work."
       },
       "card3": {
         "id": 3,

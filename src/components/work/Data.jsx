@@ -8,7 +8,7 @@ import Work6 from '../../assets/img/dungeoncrawl.png';
 import Work7 from '../../assets/img/battleship.png';
 import Work8 from '../../assets/img/myshop.png';
 import Work9 from '../../assets/img/dentflow1.png';
-import Work10 from '../../assets/img/dentflow2.png';
+import Work10 from '../../assets/img/securityJwt.png';
 
 import Giff1 from '../../assets/giffs/dentflowbackend.gif';
 
@@ -38,25 +38,19 @@ export const projectsData = [
         database: 'PostgreSQL',
 
     },
-    // {
-    //     id: 2,
-    //     image: Work10,
-    //     giff: Giff1,
-    //     movie: Movie1,
-    //     title: 'DentFlow Backend',
-    //     category: 'web',
-    //     url: 'https://github.com/RafalGontarski/DentFlow-backend',
-    //     description: 'Dental clinic management app - backend server.',
-    //     technologies: 'Java',
-    //     frameworks: 'Spring Boot, Security, Hibernate, RESTApi',
-    //     database: 'PostgreSQL',
-    // },
-    // {
-    //     id: 2,
-    //     image: Work2,
-    //     title: 'iroN',
-    //     category: 'web',
-    // },
+    {
+        id: 2,
+        image: Work10,
+        giff: Giff1,
+        movie: Work10,
+        title: 'Spring Security + JWT',
+        category: 'microservice',
+        url: 'https://github.com/RafalGontarski/Spring-Security-JWT',
+        description: 'Spring Boot 3 + Spring Security 6 - JWT Authentication and Authorisation',
+        technologies: 'Java',
+        frameworks: 'Spring Boot, Security, Hibernate, RESTApi, Swagger, Postman',
+        database: 'PostgreSQL',
+    },
     {
         id: 3,
         image: Work6,
@@ -182,10 +176,10 @@ export const projectNav = [
         id: 3,
         name: 'game',
     },
-    // {
-    //     id: 4,
-    //     name: 'frontend',
-    // },
+    {
+        id: 4,
+        name: 'microservice',
+    },
     // {
     //     id: 5,
     //     name: 'backend',
@@ -196,10 +190,11 @@ export const translationMapping = {
     all: 'all',
     web: 'web',
     game: 'game',
-    frontend: 'frontend',
+    microservice: 'microservice',
     backend: "backend",
     fullStack: "fullStack",
     wszystkie: 'all',
     strony: 'web',
     gry: 'game',
+    mikroserwis: 'microservice',
 };
