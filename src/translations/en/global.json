@@ -1,6 +1,6 @@
 {
   "header": {
-    "logo": "Raphael Gontarski",
+    "logo": "Rafal Gontarski",
     "home": "Home",
     "about": "About",
     "skills": "Skills",
@@ -9,12 +9,12 @@
     "contact": "Contact"
   },
   "home": {
-    "title": "Hi, I'm Raphael",
+    "title": "Hi, I'm Rafal",
     "subtitle": "Junior Full-Stack Developer",
     "description": "Java&React Full-Stack Developer programmer based in Warsaw and I'm passionate and ambitious to my work.",
     "button": "Hello",
-    "linkedIn": "My Linked In",
-    "gitHub": "My Git Repo",
+    "linkedIn": "Linked In",
+    "gitHub": "Repository",
     "scroll": "Scroll Down"
   },
   "about": {
@@ -142,9 +142,9 @@
     "experience": {
       "title": "Experience",
       "first": {
-        "name": "Looking for",
+        "name": "Junior Full Stack Developer",
         "place": "CodeCool",
-        "data": "2023.VI - Present"
+        "data": "2022.V - Present"
       }
     }
   },
@@ -239,7 +239,7 @@
     "toast": "Thank's! I'll answer soon."
   },
   "footer": {
-    "title": "Hi, I'm Raphael",
+    "title": "Hi, I'm Rafal",
     "about": "About",
     "projects": "Projects",
     "testimonials": "Testimonials",

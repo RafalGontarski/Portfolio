@@ -26,8 +26,8 @@ export const Data = () => {
                 >👋</image>
             </a>
             {/*<div className='home__buttons'>*/}
-            {/*    <a href="#contact" className={`button button--flex ${isDarkMode ? "button__dark-mode" : "button__light-mode"}`}>*/}
-            {/*        <i className="uil uil-linkedin"></i>*/}
+            {/*    <a href="https://www.linkedin.com/in/rafa%C5%82-gontarski/" className={`button button--flex ${isDarkMode ? "button__dark-mode" : "button__light-mode"}`}>*/}
+            {/*        <i className="uil uil-linkedin" style={{marginRight: '0.5rem'}}></i>*/}
             {/*        {t("home.linkedIn")}*/}
             {/*        /!*<image*!/*/}
             {/*        /!*    style={{*!/*/}
@@ -35,8 +35,8 @@ export const Data = () => {
             {/*        /!*    }}*!/*/}
             {/*        /!*>👋</image>*!/*/}
             {/*    </a>*/}
-            {/*    <a href="#contact" className={`button button--flex ${isDarkMode ? "button__dark-mode" : "button__light-mode"}`}>*/}
-            {/*        <i className="uil uil-github-alt"></i>*/}
+            {/*    <a href="https://github.com/RafalGontarski" className={`button button--flex ${isDarkMode ? "button__dark-mode" : "button__light-mode"}`}>*/}
+            {/*        <i className="uil uil-github-alt" style={{marginRight: '0.5rem'}}></i>*/}
             {/*        {t("home.gitHub")}*/}
             {/*        /!*<image*!/*/}
             {/*        /!*    style={{*!/*/}

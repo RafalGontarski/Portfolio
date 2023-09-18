@@ -116,9 +116,9 @@ export const Contact = () => {
                                 ""}`}>Email </h3>
                             <span className={`contact__card-data ${isDarkMode ?
                                 "contact__card-data-dark-mode" :
-                                ""}`}>gontarskirafal@gmail.com</span>
+                                ""}`}>rafalgontarski.dev@gmail.com</span>
 
-                            <a href="mailto:gontarskirafal@gmail.com"
+                            <a href="mailto:rafalgontarski.dev@gmail.com"
                                target='_blank'
                                className={`contact__button ${isDarkMode ?
                                    'contact__button-dark-mode' : 

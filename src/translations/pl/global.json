@@ -13,8 +13,8 @@
     "subtitle": "Młodszy Full Stack Deweloper",
     "description": "Programista Java&React Full-Stack mieszkający w Warszawie. Do swojej pracy podchodzę z pasją i ambicją.",
     "button": "Cześć",
-    "linkedIn": "Mój Linked In",
-    "gitHub": "Moje Repo",
+    "linkedIn": "Linked In",
+    "gitHub": "Repozytorium",
     "scroll": "Przewiń w dół"
   },
   "about": {
@@ -142,9 +142,9 @@
     "experience": {
       "title": "Doświadczenie",
       "first": {
-        "name": "Poszukuję",
+        "name": "Junior Full Stack Developer",
         "place": "CodeCool",
-        "data": "2023.VI - Obecnie"
+        "data": "2022.V - Obecnie"
       }
     }
   },

@@ -1,20 +1,21 @@
 import React, {useContext} from 'react';
 import './about.css';
-import AboutImg from '../../assets/img/about.jpeg';
-import CVPL from '../../assets/Rafał Gontarski - CV PL.pdf'
-import CVEN from '../../assets/Rafał Gontarski - CV EN.pdf';
+import AboutImg from '../../assets/img/newabout.jpg';
+// import CVPL from '../../assets/Rafał_Gontarski_CV_PL.pdf';
+// import CVEN from '../../assets/Rafał_Gontarski_CV_ENG.pdf';
+import CV from '../../assets/Rafal_Gontarski_CV_JAVA.pdf'
 import {Info} from "./Info";
 import { UilFileDownload } from '@iconscout/react-unicons'
 import {DarkModeContext} from "../../context/DarkModeContext";
 import {useTranslation} from "react-i18next";
 
 export const About = () => {
-    const { i18n } = useTranslation();  // pobierz instancję i18n
+    // const { i18n } = useTranslation();  // pobierz instancję i18n
     const { isDarkMode} = useContext(DarkModeContext);
     const [t] = useTranslation("global");
 
     // Wybierz odpowiednie CV na podstawie bieżącego języka
-    const cvFile = i18n.language === 'en' ? CVEN : CVPL;
+    // const cvFile = i18n.language === 'en' ? CVEN : CVPL;
 
     return (
         <section className="about section" id="about">
@@ -29,7 +30,7 @@ export const About = () => {
                     </
                     p>
 
-                    <a download='' href={cvFile} className={`button button--flex ${isDarkMode ? "button__dark-mode" : "button__light-mode"}`}>
+                    <a download='' href={CV} className={`button button--flex ${isDarkMode ? "button__dark-mode" : "button__light-mode"}`}>
                         {t("about.button")}
                         {/*<i className="uil uil-file-download"></i>*/}
                         <UilFileDownload style={{ width: '24px', height: '24px', marginLeft: '0.5rem' }}/>

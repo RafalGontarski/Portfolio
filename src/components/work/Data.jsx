@@ -9,6 +9,8 @@ import Work7 from '../../assets/img/battleship.png';
 import Work8 from '../../assets/img/myshop.png';
 import Work9 from '../../assets/img/dentflow1.png';
 import Work10 from '../../assets/img/securityJwt.png';
+import Work11 from '../../assets/img/javasnake.jpg';
+
 
 import Giff1 from '../../assets/giffs/dentflowbackend.gif';
 
@@ -21,6 +23,7 @@ import Movie6 from '../../assets/movies/roguelike.mov';
 import Movie7 from '../../assets/movies/polishdraughts.mov';
 import Movie8 from '../../assets/movies/snake.mov';
 import Movie9 from '../../assets/movies/tictactoe.mov';
+import Movie10 from '../../assets/movies/Java Snake.mp4';
 
 
 export const projectsData = [
@@ -77,12 +80,19 @@ export const projectsData = [
         frameworks: '-',
         database: '-',
     },
-    // {
-    //     id: 5,
-    //     image: Work5,
-    //     title: 'AskMate',
-    //     category: 'web',
-    // },
+    {
+        id: 5,
+        image: Work11,
+        movie: Movie10,
+        title: 'Java Snake',
+        category: 'game',
+        url: 'https://github.com/RafalGontarski/JavaSnake',
+        description: 'This repository contains the source code for the classic Snake game implemented in Java. This implementation provides a simple and clean GUI and user-friendly controls to navigate the snake.',
+        technologies: 'Java',
+        libraries: '-',
+        frameworks: '-',
+        database: '-',
+    },
     {
         id: 6,
         image: Work2,

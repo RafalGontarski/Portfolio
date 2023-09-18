@@ -187,6 +187,35 @@ img {
 }
 /* BUTTONS */
 
+.small-button {
+  display: inline-block;
+
+  /*color: var(--container-color);*/
+  background: linear-gradient(to right, var(--purple-color-first), var(--violet-color-first-background));
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: var(--font-medium);
+}
+
+.small-button__dark-mode {
+  background: linear-gradient(to right, var(--purple-color), var(--violet-color));
+
+}
+
+.small-button__light-mode {
+  background: linear-gradient(to right, var(--purple-color-first), var(--violet-color-first-background));
+}
+
+.small-button__light-mode:hover {
+  background: linear-gradient(to right, var(--purple-color), var(--violet-color));
+}
+
+.small-button__dark-mode:hover {
+  background: linear-gradient(to right, var(--purple-color-first), var(--violet-color-first-background));
+
+  /*transition: 1s;*/
+}
+
 .button {
   display: inline-block;
 
