@@ -3,6 +3,8 @@ import './footer.css';
 
 import {DarkModeContext} from "../../context/DarkModeContext";
 import {useTranslation} from "react-i18next";
+import DarkLogo from "../../assets/logo/GontarskiDark1.png";
+import LightLogo from "../../assets/logo/GontarskiLight1.png";
 
 export const Footer = () => {
     const { isDarkMode } = useContext(DarkModeContext);
@@ -10,7 +12,21 @@ export const Footer = () => {
     return (
         <footer className={`footer ${isDarkMode ? "footer__dark-mode" : "footer__light-mode"}`}>
             <div className="footer__container container">
-                <h1 className={`footer__title ${isDarkMode ? "footer__title-dark-mode" : ""}`}>{t("footer.title")} 👋</h1>
+
+
+                <a href={'index.html'}>
+                    <h1 className={`footer__title ${isDarkMode ? "footer__title-dark-mode" : ""}`}>
+                        {isDarkMode ?
+                            <img src={DarkLogo} alt="Logo dla trybu ciemnego"
+                                 width={230} height={5}
+                            /> :
+                            <img src={LightLogo} alt="Logo dla trybu jasnego"
+                                 width={230} height={5}
+                            />}
+
+
+                    </h1>
+                </a>
 
                 <ul className="footer__list">
                     <li>

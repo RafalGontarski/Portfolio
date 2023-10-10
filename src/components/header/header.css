@@ -69,6 +69,7 @@
 .nav__logo,
 .nav__toggle {
     font-weight: var(--font-medium);
+    margin-top: 0.5rem;
 }
 
 .nav__toggle-light-mode {

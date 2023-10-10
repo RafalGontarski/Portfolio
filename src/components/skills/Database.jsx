@@ -16,8 +16,8 @@ export const Database = () => {
 
                         <div>
                             <h3 className={`skills__name ${isDarkMode ? "skills__name-dark-mode" : "skills__name-light-mode"}`}>PostgreSQL</h3>
-                            <span
-                                className={`skills__level ${isDarkMode ? "skills__level-dark-mode" : "skills__level-light-mode"}`}>{t("skills.level.intermediate")}</span>
+                            {/*<span*/}
+                            {/*    className={`skills__level ${isDarkMode ? "skills__level-dark-mode" : "skills__level-light-mode"}`}>{t("skills.level.intermediate")}</span>*/}
                         </div>
                     </div>
 
@@ -27,8 +27,8 @@ export const Database = () => {
 
                         <div>
                             <h3 className={`skills__name ${isDarkMode ? "skills__name-dark-mode" : "skills__name-light-mode"}`}>Hibernate</h3>
-                            <span
-                                className={`skills__level ${isDarkMode ? "skills__level-dark-mode" : "skills__level-light-mode"}`}>{t("skills.level.intermediate")}</span>
+                            {/*<span*/}
+                            {/*    className={`skills__level ${isDarkMode ? "skills__level-dark-mode" : "skills__level-light-mode"}`}>{t("skills.level.intermediate")}</span>*/}
                         </div>
                     </div>
 
@@ -38,8 +38,8 @@ export const Database = () => {
 
                         <div>
                             <h3 className={`skills__name ${isDarkMode ? "skills__name-dark-mode" : "skills__name-light-mode"}`}>SQL</h3>
-                            <span
-                                className={`skills__level ${isDarkMode ? "skills__level-dark-mode" : "skills__level-light-mode"}`}>{t("skills.level.intermediate")}</span>
+                            {/*<span*/}
+                            {/*    className={`skills__level ${isDarkMode ? "skills__level-dark-mode" : "skills__level-light-mode"}`}>{t("skills.level.intermediate")}</span>*/}
                         </div>
                     </div>
 
@@ -48,8 +48,8 @@ export const Database = () => {
 
                         <div>
                             <h3 className={`skills__name ${isDarkMode ? "skills__name-dark-mode" : "skills__name-light-mode"}`}>Hibernate</h3>
-                            <span
-                                className={`skills__level ${isDarkMode ? "skills__level-dark-mode" : "skills__level-light-mode"}`}>{t("skills.level.intermediate")}</span>
+                            {/*<span*/}
+                            {/*    className={`skills__level ${isDarkMode ? "skills__level-dark-mode" : "skills__level-light-mode"}`}>{t("skills.level.intermediate")}</span>*/}
                         </div>
                     </div>
                 </div>
@@ -60,8 +60,8 @@ export const Database = () => {
 
                         <div>
                             <h3 className={`skills__name ${isDarkMode ? "skills__name-dark-mode" : "skills__name-light-mode"}`}>Data Modeling</h3>
-                            <span
-                                className={`skills__level ${isDarkMode ? "skills__level-dark-mode" : "skills__level-light-mode"}`}>{t("skills.level.basic")}</span>
+                            {/*<span*/}
+                            {/*    className={`skills__level ${isDarkMode ? "skills__level-dark-mode" : "skills__level-light-mode"}`}>{t("skills.level.basic")}</span>*/}
                         </div>
                     </div>
 
@@ -70,8 +70,8 @@ export const Database = () => {
 
                         <div>
                             <h3 className={`skills__name ${isDarkMode ? "skills__name-dark-mode" : "skills__name-light-mode"}`}>JDBC</h3>
-                            <span
-                                className={`skills__level ${isDarkMode ? "skills__level-dark-mode" : "skills__level-light-mode"}`}>{t("skills.level.intermediate")}</span>
+                            {/*<span*/}
+                            {/*    className={`skills__level ${isDarkMode ? "skills__level-dark-mode" : "skills__level-light-mode"}`}>{t("skills.level.intermediate")}</span>*/}
                         </div>
                     </div>
 
@@ -80,8 +80,8 @@ export const Database = () => {
 
                         <div>
                             <h3 className={`skills__name ${isDarkMode ? "skills__name-dark-mode" : "skills__name-light-mode"}`}>PostgreSQL</h3>
-                            <span
-                                className={`skills__level ${isDarkMode ? "skills__level-dark-mode" : "skills__level-light-mode"}`}>{t("skills.level.preIntermediate")}</span>
+                            {/*<span*/}
+                            {/*    className={`skills__level ${isDarkMode ? "skills__level-dark-mode" : "skills__level-light-mode"}`}>{t("skills.level.preIntermediate")}</span>*/}
                         </div>
                     </div>
 
@@ -90,8 +90,8 @@ export const Database = () => {
 
                         <div>
                             <h3 className={`skills__name ${isDarkMode ? "skills__name-dark-mode" : "skills__name-light-mode"}`}>Sanity</h3>
-                            <span
-                                className={`skills__level ${isDarkMode ? "skills__level-dark-mode" : "skills__level-light-mode"}`}>{t("skills.level.basic")}</span>
+                            {/*<span*/}
+                            {/*    className={`skills__level ${isDarkMode ? "skills__level-dark-mode" : "skills__level-light-mode"}`}>{t("skills.level.basic")}</span>*/}
                         </div>
                     </div>
 

@@ -4,7 +4,9 @@ import {DarkModeContext} from "../../context/DarkModeContext";
 import { Icon } from '@iconify/react';
 import {LanguageContext} from "../../context/LanguageContext";
 import {useTranslation} from "react-i18next";
-import ProfileLogo from '../../assets/img/profile-removebg-preview.png';
+import DarkLogo from '../../assets/logo/GontarskiDark1.png';
+import LightLogo from '../../assets/logo/GontarskiLight1.png';
+
 
 export const Header = () => {
     /* ================ Change Background Header =================*/
@@ -35,9 +37,14 @@ export const Header = () => {
 
             <nav className='nav container'>
 
-                <a href='index.html' className={`nav__logo nav__logo-dark ${isDarkMode ? "nav__logo-light" : ""}`}>
-                    {/*<img src={ProfileLogo} alt='' style={{width: 30,}}/>*/}
-                    {t("header.logo")}
+                <a href='index.html' className={`nav__logo ${isDarkMode ? "nav__logo-dark" : "nav__logo-light"}`}>
+                    {isDarkMode ?
+                        <img src={DarkLogo} alt="Logo dla trybu ciemnego"
+                            width={230} height={5}
+                        /> :
+                        <img src={LightLogo} alt="Logo dla trybu jasnego"
+                             width={230} height={5}
+                        />}
                 </a>
 
 

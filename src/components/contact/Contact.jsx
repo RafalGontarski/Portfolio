@@ -153,28 +153,28 @@ export const Contact = () => {
 
                         </div>
 
-                        <div className={`contact__card ${isDarkMode ? 
-                            "contact__card-dark-mode" : 
-                            "contact__card-light-mode"}`}>
-                            <i className={`bx bxl-discord contact__card-icon ${isDarkMode ?
-                                "contact__card-icon-dark-mode" :
-                                "contact__card-icon-light-mode"}`}></i>
+                        {/*<div className={`contact__card ${isDarkMode ? */}
+                        {/*    "contact__card-dark-mode" : */}
+                        {/*    "contact__card-light-mode"}`}>*/}
+                        {/*    <i className={`bx bxl-discord contact__card-icon ${isDarkMode ?*/}
+                        {/*        "contact__card-icon-dark-mode" :*/}
+                        {/*        "contact__card-icon-light-mode"}`}></i>*/}
 
-                            <h3 className={`contact__card-title ${isDarkMode ?
-                                "contact__card-title-dark-mode" :
-                                ""}`}>Discord</h3>
-                            <span className={`contact__card-data ${isDarkMode ?
-                                "contact__card-data-dark-mode" :
-                                ""}`}>RafalGontarski#1582</span>
+                        {/*    <h3 className={`contact__card-title ${isDarkMode ?*/}
+                        {/*        "contact__card-title-dark-mode" :*/}
+                        {/*        ""}`}>Discord</h3>*/}
+                        {/*    <span className={`contact__card-data ${isDarkMode ?*/}
+                        {/*        "contact__card-data-dark-mode" :*/}
+                        {/*        ""}`}>RafalGontarski#1582</span>*/}
 
-                            {/*<a href="https://m.me/rafalgontarski" className={`contact__button ${isDarkMode ?*/}
-                            {/*       'contact__button-dark-mode' : */}
-                            {/*       'contact__button-light-mode'}`}>{t("contact.container.talkToMe.content3.button")}*/}
-                            {/*    <i className="bx bx-right-arrow-alt contact__button-icon"></i>*/}
-                            {/*</a>*/}
-                            {/*<div><br/></div>*/}
+                        {/*    /!*<a href="https://m.me/rafalgontarski" className={`contact__button ${isDarkMode ?*!/*/}
+                        {/*    /!*       'contact__button-dark-mode' : *!/*/}
+                        {/*    /!*       'contact__button-light-mode'}`}>{t("contact.container.talkToMe.content3.button")}*!/*/}
+                        {/*    /!*    <i className="bx bx-right-arrow-alt contact__button-icon"></i>*!/*/}
+                        {/*    /!*</a>*!/*/}
+                        {/*    /!*<div><br/></div>*!/*/}
 
-                        </div>
+                        {/*</div>*/}
                     </div>
                 </div>
 
